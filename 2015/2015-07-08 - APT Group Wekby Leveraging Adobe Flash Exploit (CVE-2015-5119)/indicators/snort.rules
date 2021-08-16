@@ -1,0 +1,1 @@
+alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"Volexity - Wekby Gh0st Variant [HTTP\1.1 Sycmentec]"; flow:to_server,established; content:"HTTP|5c|1.1 Sycmentec"; depth:18; sid:201507081;)

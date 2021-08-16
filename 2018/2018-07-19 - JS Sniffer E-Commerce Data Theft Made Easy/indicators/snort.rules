@@ -1,0 +1,1 @@
+alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"Volexity – JS Sniffer Data Theft Beacon Detected"; flow:established,to_server; content:".php?"; http_uri; content:"=WyJ1cmw"; http_uri; sid:2018061501;)

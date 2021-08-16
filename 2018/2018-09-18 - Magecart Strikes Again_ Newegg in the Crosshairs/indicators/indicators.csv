@@ -1,0 +1,3 @@
+value,type,notes
+neweggstats.com,hostname,"Magecart domain utilized to receive data during the Newegg compromise. Stolen data is sent via a POST request to the URL path /GlobalData/"
+217.23.4.11,ipaddress,"Resolution for known bad domain."

@@ -1,0 +1,25 @@
+value,type,notes
+62.4.8.139,ipaddress,"Data sent back via URL path /gate.php?image_id=<base64>"
+94.249.236.106,ipaddress,"Data sent back via URL path /zfhdsofsdfnfdsfsdmfsdo/gate.php?image_id=<base64>"
+anonimousall.xyz,hostname,"Data sent back via URL path /gate.php?image_id=<base64>"
+185.180.198.76,ipaddress,"Resolution for known bad domain"
+captcha-security.net,hostname,"Domain hosted on the same IP as captcha-securitytickets.net"
+91.92.137.26,ipaddress,"Resolution for known bad domain"
+captcha-securitytickets.net,hostname,"Data sent back via URL path /captchaProtectionMonitor/captcha.php?image_id=<base64>"
+googles-contents.com,hostname,"Data sent back via URL path /gate.php?image_id=<base64>"
+google-analutics.com,hostname,"Data sent back via URL path /gate.php?image_id=<base64>"
+google-analytisc.com,hostname,"Data sent back via URL path /ga.php?analytic=<base64>"
+gstaticss.com,hostname,"Data sent back via URL path /gate.php?image_id=<base64>"
+ka11yg0.strangled.net,hostname,Data sent back via URL path /gate.php?image_id=<base64>
+patrickwilliams.x10host.com,hostname,Data sent back via URL path /gate.php?image_id=<base64>
+site-stats.club,hostname,Data sent back via URL path /gate.php?image_id=<base64>
+wildestore.biz,hostname,Data sent back via URL path /gate.php?image_id=<base64>
+vuln.su,hostname,Data sent back via URL path /sn_last/gate.php?image_id=<base64>
+185.125.46.10,ipaddress,"Resolution for known bad domain"
+198.91.80.25,ipaddress,"Resolution for known bad domain"
+185.82.200.200,ipaddress,"Resolution for known bad domain"
+31.148.99.33,ipaddress,"Resolution for known bad domain"
+193.0.179.53,ipaddress,"Resolution for known bad domain"
+191.101.245.10,ipaddress,"Resolution for known bad domain"
+94.249.236.106,ipaddress,"Resolution for known bad domain"
+91.92.137.26,ipaddress,"Resolution for known bad domain"

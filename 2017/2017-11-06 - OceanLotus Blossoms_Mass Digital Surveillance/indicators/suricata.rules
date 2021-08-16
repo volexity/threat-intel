@@ -1,0 +1,5 @@
+alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"Volex - OceanLotus JavaScript Load (connect.js)"; flow:to_server,established; content:"GET"; http_method; content:"connect.js?timestamp="; http_uri; sid:2017083001; )
+
+alert http $EXTERNAL_NET any -> $HOME_NET any (msg:"Volex - OceanLotus JavaScript Fake Page URL Builder Response"; flow:to_client,established; file_data;content:"{|22|link|22|:|22|http"; depth:13; file_data; content:"|22|load|22|"; sid:2017083002; rev:1;)
+
+alert http $EXTERNAL_NET any -> $HOME_NET any (msg:"Volex - OceanLotus System Profiling JavaScript (linkStorage.x00SOCKET)"; flow:to_client,established; file_data; content:"linkStorage.x00SOCKET"; sid:2017083003;)

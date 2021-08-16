@@ -1,0 +1,1 @@
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"Volex - Possible Shellshock Worm Check-in Detected"; flow:established,to_server; content:".c.php?request="; http_uri;  sid:2015040901;)

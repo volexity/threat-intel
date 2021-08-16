@@ -1,0 +1,30 @@
+value,type,notes
+thamcungbisu.org,hostname,Fake site set up by OceanLotus
+baomoivietnam.com,hostname,Fake site set up by OceanLotus
+baodachieu.com,hostname,Fake site set up by OceanLotus
+nhansudaihoi13.org,hostname,Fake site set up by OceanLotus
+tinmoivietnam.com,hostname,Fake site set up by OceanLotus
+laostimenews.com,hostname,Fake site set up by OceanLotus
+malaynews.org,hostname,Fake site set up by OceanLotus
+kmernews.com,hostname,Fake site set up by OceanLotus
+philiippinesnews.net,hostname,Fake site set up by OceanLotus
+ledanvietnam.org,hostname,Fake site set up by OceanLotus
+khmerleaks.com,hostname,Fake site set up by OceanLotus
+khmer-livenews.com,hostname,Fake site set up by OceanLotus
+hypepodscase.com,hostname,Used to host OceanLotus profiling kit and malware delivery JS
+arbenha.com,hostname,Used to host OceanLotus profiling kit and malware delivery JS
+gservice.reviews,hostname,Likely used in Android phishing in SWC context
+summerevent.webhop.net,hostname,Cobalt Strike C2 address
+dance-til-dawn.podzone.net,hostname,Cobalt Strike C2 address
+andreagahuvrauvin.com,hostname,OceanLotus DNS malware C2 address
+theme.blogwix.com,hostname,Used to host OceanLotus profiling kit and malware delivery JS
+outlook-client.com,hostname,Likely used in phishing in SWC context
+gusercontent.com,hostname,Likely used in phishing in SWC context
+serrvice.net,hostname,Likely used in phishing in SWC context
+yhsetting.com,hostname,Likely used in phishing in SWC context
+hmacount.com,hostname,Likely used in phishing in SWC context
+fontloading.com,hostname,Likely used in phishing in SWC context
+viewerservice.com,hostname,Likely used in phishing in SWC context
+cbca9a92a6aa067ff4cab8f1d34ec49ffc9a06c90881f48da369c973182ce06d,sha256,CobaltStrike Beacon file
+230ac0808fde525306d6e55d389849f67fc328968c433a5053d676d688032e6f,sha256,RAR delivery file
+7fd58fa4c9f24114c08b3265d30be5aa8f6519ebd2310cc6956eda6c6e6f56f0,sha256,Loader DLL

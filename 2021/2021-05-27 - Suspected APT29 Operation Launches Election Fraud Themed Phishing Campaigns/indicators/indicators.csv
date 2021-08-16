@@ -1,0 +1,21 @@
+value,type,notes
+29e2ef8ef5c6ff95e98bff095e63dc05,md5,"ICA-declass.iso"
+bf7b36c521e52093360a4df0dd131703b7b3d648,sha1,"ICA-declass.iso"
+94786066a64c0eb260a28a2959fcd31d63d175ade8b05ae682d3f6f9b2a5a916,sha256,"ICA-declass.iso"
+1c3b8ae594cb4ce24c2680b47cebf808,md5,"Documents.dll"
+1fb12e923bdb71a1f34e98576b780ab2840ba22e,sha1,"Documents.dll"
+ee42ddacbd202008bcc1312e548e1d9ac670dd3d86c999606a3a01d464a2a330,sha256,"Documents.dll" 
+b40b30329489d342b2aa5ef8309ad388,md5,"ICA-declass.pdf"
+738c20a2cc825ae51b2a2f786248f850c8bab6f5,sha1,"ICA-declass.pdf"
+7d34f25ad8099bd069c5a04799299f17d127a3866b77ee34ffb59cfd36e29673,sha256,"ICA-declass.pdf"
+dcfd60883c73c3d92fceb6ac910d5b80,md5,Reports.lnk
+1cb1c2cd9f59d4e83eb3c950473a772406ec6f1a,sha1,Reports.lnk
+48b5fb3fa3ea67c2bc0086c41ec755c39d748a7100d71b81f618e82bf1c479f0,sha256,Reports.lnk
+cca50cd497970977a5e880f2e921db72,"md5",DbgView.dll
+38c99e8cd95f28b8d79b758cb940cf139e09f6ae,"sha1",DbgView.dll
+ad67aaa50fd60d02f1378b4155f69cffa9591eaeb80523489a2355512cc30e8c,"sha256",DbgView.dll
+theyardservice.com,hostname,"CobaltStrike C2"
+worldhomeoutlet.com,hostname,"CobaltStrike C2"
+83.171.237.173,ipaddress,"Resolution for known bad domain name"
+192.99.221.77,ipaddress,"Resolution for known bad domain name"
+refreshauthtoken-default-rtdb..firebaseio.com,hostname,"Freshfire C2"

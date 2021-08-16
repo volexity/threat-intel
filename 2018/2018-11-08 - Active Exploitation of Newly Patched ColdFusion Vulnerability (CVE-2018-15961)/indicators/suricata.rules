@@ -1,0 +1,1 @@
+alert http $EXTERNAL_NET any -> $HOME_NET any (msg:"Volex - ColdFusion Unauthenticated Upload Attempt (upload.cfm)"; flow:to_server,established; content:"POST"; http_method; content:"upload.cfm?action=upload"; nocase; http_uri; sid:2018093003;)
