@@ -5,7 +5,7 @@ rule apt_win_bluelight_b : InkySquid
         description = "North Korean origin malware which uses a custom Google App for c2 communications."
         date = "2021-06-21"
         hash1 = "837eaf7b736583497afb8bbdb527f70577901eff04cc69d807983b233524bfed"
-        license = "See license at https://github.com/volexity/threat-intel/LICENSE.txt"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
 
     strings:
         $magic = "host_name: %ls, cookie_name: %s, cookie: %s, CT: %llu, ET: %llu, value: %s, path: %ls, secu: %d, http: %d, last: %llu, has: %d"
@@ -107,7 +107,7 @@ rule apt_win_bluelight : InkySquid
 		description = "The BLUELIGHT malware family. Leverages Microsoft OneDrive for network communications."
 		hash1 = "7c40019c1d4cef2ffdd1dd8f388aaba537440b1bffee41789c900122d075a86d"
 		hash2 = "94b71ee0861cc7cfbbae53ad2e411a76f296fd5684edf6b25ebe79bf6a2a600a"
-        license = "See license at https://github.com/volexity/threat-intel/LICENSE.txt"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
 		
 	strings:
 		$pdb1 = "\\Development\\BACKDOOR\\ncov\\"

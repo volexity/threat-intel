@@ -6,7 +6,7 @@ rule webshell_aspx_simpleseesharp : Webshell Unclassified
         date = "2021-03-01"
         description = "A simple ASPX Webshell that allows an attacker to write further files to disk."
         hash = "893cd3583b49cb706b3e55ecb2ed0757b977a21f5c72e041392d1256f31166e2"
-        license = "See license at https://github.com/volexity/threat-intel/LICENSE.txt"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
 
     strings:
         $header = "<%@ Page Language=\"C#\" %>"
@@ -25,7 +25,7 @@ rule webshell_aspx_reGeorgTunnel : Webshell Commodity
         date = "2021-03-01"
         description = "variation on reGeorgtunnel"
         hash = "406b680edc9a1bb0e2c7c451c56904857848b5f15570401450b73b232ff38928"
-        license = "See license at https://github.com/volexity/threat-intel/LICENSE.txt"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         reference = "https://github.com/sensepost/reGeorg/blob/master/tunnel.aspx"
 
     strings:
@@ -49,7 +49,7 @@ rule webshell_aspx_sportsball : Webshell
         date = "2021-03-01"
         description = "The SPORTSBALL webshell allows attackers to upload files or execute commands on the system."
         hash = "2fa06333188795110bba14a482020699a96f76fb1ceb80cbfa2df9d3008b5b0a"
-        license = "See license at https://github.com/volexity/threat-intel/LICENSE.txt"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
 
     strings:
         $uniq1 = "HttpCookie newcook = new HttpCookie(\"fqrspt\", HttpContext.Current.Request.Form"
