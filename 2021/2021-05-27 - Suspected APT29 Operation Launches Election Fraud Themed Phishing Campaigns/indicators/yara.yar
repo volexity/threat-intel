@@ -7,7 +7,7 @@ rule apt_win_flipflop_ldr : APT29
         date = "2021-05-25"
         description = "A loader for the CobaltStrike malware family, which ultimately takes the first and second bytes of an embedded file, and flips them prior to executing the resulting payload."
         hash = "ee42ddacbd202008bcc1312e548e1d9ac670dd3d86c999606a3a01d464a2a330" 
-        license = "See license at https://github.com/volexity/threat-intel/LICENSE.txt"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
 
     strings:
         $s1 = "irnjadle"
@@ -25,7 +25,7 @@ rule trojan_win_cobaltstrike : Commodity
         date = "2021-05-25"
         description = "The CobaltStrike malware family."
         hash = "b041efb8ba2a88a3d172f480efa098d72eef13e42af6aa5fb838e6ccab500a7c"
-        license = "See license at https://github.com/volexity/threat-intel/LICENSE.txt"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
 
     strings:
         $s1 = "%s (admin)" fullword
@@ -47,7 +47,7 @@ rule apt_win_freshfire : APT29
         date = "2021-05-27"
         description = "The FRESHFIRE malware family. The malware acts as a downloader, pulling down an encrypted snippet of code from a remote source, executing it, and deleting it from the remote server."
         hash = "ad67aaa50fd60d02f1378b4155f69cffa9591eaeb80523489a2355512cc30e8c"
-        license = "See license at https://github.com/volexity/threat-intel/LICENSE.txt"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
 
     strings:
         $uniq1 = "UlswcXJJWhtHIHrVqWJJ"
