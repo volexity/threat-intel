@@ -59,12 +59,11 @@ rule apt_win_decrok : InkySquid
         $av1 = "Select * From AntiVirusProduct" wide
         $av2 = "root\\SecurityCenter2" wide
 
-        $func1 = "CreateThread"
-        $format = "%02x"
+        /* CreateThread..%02x */
+        $funcformat = { 25 30 32 78 [0-10] 43 72 65 61 74 65 54 68 72 65 61 64 }
 
     condition:
-        all of them and
-        $func1 in (@format..@format+10)
+        all of them
 }
 
 rule apt_win_rokload : InkySquid
