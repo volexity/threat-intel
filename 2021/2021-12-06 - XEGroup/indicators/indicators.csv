@@ -1,0 +1,145 @@
+value,type,description
+ccn.xegroups.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+ftp.paycashs.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+mail.xework.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+email.paycashs.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+ns2.amazon.xegroups.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+restapi.xegroups.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"0660dc46373ae73ab7007ab429ade3ba7a22ee17,16f187214bda4d3d7865bbaba239c98acffdd1eb0e705d17b29c6e7710a0747b,23f22adfa7e806d8631141ca13202358",file,BACKWASH sample
+ns1.xework.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"e0a6d7cb813523085df733529aa38355cd77ea7b,6f44a9c13459533a1f3e0b0e698820611a18113c851f763797090b8be64fd9d5,db5d2179f86acdf194ca5a4ba320c46d",file,BACKWASH sample
+"c174277f40bd9e8cc794cfee6710a616583c00e0,b7b78080d559c623a60f8fa8d562575d09ed6292301209c605f59b5a27fd564f,24270f60936a435d5846281f66628c49",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"aa096a095ff2bf386f82bfe0152227589df23d94,4a30e4382f82f52fa0567209ffdc969d62e1ba67ff97607e7b1de3160d4e5d37,cadddbcfab7e8706a7367b3c3d143870",file,NETCAT sample
+"e6973077fbad92af5113d21bf47de7a88e20485f,984b5c740598fcb2894c1fefd121d2b2d2d108bf64669678e856d360fd28af2b,3303250c731f487b1e74abceedd23e36",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+ns2.xework.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+ftp.xework.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+www.xework.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"d1e47a20699997a5fd7eb5c532a24ae62514295c,f1580be39b7f14af9c9ee03c1b26f09db4fcf030f144383b1f40c739387885ae,c67acae584251bf9e0bbf94147923180",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"91c6c4e176a21f9a1cfa8ef4ec82f68f34af043b,bae9ac3a35ea448a4deed5255e1f153b355b94928b94dee03db111f61e3be613,b10092cfb5a182f9aeeb64f6f8dbb487",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"e5283d8819673c8cf93aa7dc986558ed287b8644,21683e02e11c166d0cf616ff9a1a4405598db7f4adfc87b205082ae94f83c742,85840fd00fc49e91f5c1002382e8f253",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+mail.hivnd.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"5d7710c9f3b2ac1e576b7af12feb4e3831bc7b6f,0bc9d5d02f6fc0521feecd7e4d4e121f94625e37721c090d7b37b8cb62628394,665ad9b98a0df9d790e59c7bd5c95dd9",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"69e3e970e192535cae4d4c60c46dfa584f3c3b8d,92f9593cfa0a28951cae36755d54de63631377f1b954a4cb0474fa0b6193c537,465822fb084c750ad78c98bb18e565b8",file,XESKim sample
+"7d6a87fa147d36ec7c46fddbb42ba7665f502207,a0ab222673d35d750a0290db1b0ce890b9d40c2ab67bfebb62e1a006e9f2479c,f968639a4840535a6ecda1cbe3065260",file,BACKWASH sample
+"bdd74bd79376540db1ab38b8579f1c766d3da0a1,870a8fd4b15553625e6c43d6f474a06e4eecc9d8dae7aac69284f8d333582e82,1909d6d0cae603b8946334b18e1c16d5",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"81ac669b90b6983eed80bd323e26ebb104ac1c35,01da35b6864443709acb2ab96a5acc818e53adfe1bff8462483028ae96b58f7a,4935a284956af1d105c219c69c5ccaf8",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"a6c38d65d023049527d8a738f3ad957ffb334fc9,3d76e41c270fc5d9f5409194195ad3172d80105cce8c8959273d4532f656f9db,aa2b3f3609483d534822b88ec0ad240f",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"d3f6dd6d8cc42012fdcd248dcd144ea63a532ccf,42b71d9548a8dfac0e4b3fd3946329972bdc0e156402ca47e6bb1cd58ab9f77c,b2f0e43aee8e2b751f59452141dc1711",file,NETCAT sample
+"2b11b849409c661b05f5f24c525c9baddeebf98a,15cf72e6d6df54cdbbbe90e7a755559c609feff2bb897a966001c9d790902553,1cf0bfeec6c8f9a0649302af9031ba77",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"13037f612b0dfa4c80c73018900d5b56c1b1c7a1,fc461929ef7fc76aa538e73caf722facd354ed69255b9c33b7840c63a0275beb,86da7f409ccf2fc36f42ac2807ddc645",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"1745ada809a9e80f80ce8a38d2bb5858378a4206,5cc02305d7b5cb0675f2ac65422a115aa44d8f28e5a2b759470d17d6bf851a3a,87fadafde153ec4d73a358c4897e54e6",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"0c5b4b687b1e578b82f292c7c0ee8728bce1a168,29f9098b015163fea0c08a29b6c3ab4b08ccc211af00260493d24c276af6edc0,d26e32be398a38a24b797cc914ea5383",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"fa82e1b402c63d21ce15f230b32ba97ce1402b43,89f5c94bc8b8710b57906244c7e64b7e1933b33123d8e2034f2117feb39f8d14,e96e14bbc5b19c973228a72ce23e42cf",file,XESKim sample
+"f7cee92c44272fe5d5d43e3b25634b9fa4c538ff,008f39e371a1e1467491c142eb0830432f0054b4186715946277e157d58f5d0e,f70aa2a4274c4600d7ec8a65a1d00e66",file,PNGEXE sample
+"946345fcad99b0b82cf8518c075bfb2cf77028fd,6aeb859aba972f9d341c5ab433d6267553acd3e898d586e50f958f06f06a8694,117da3d1c87c17919e435c6e7f83e585",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"2887cb67ad6243ef8b01005c8a414bbace99f5ed,8ba7dbd9b403bcc1573a4be24383886db8d4eb53e67b4768396816fa052c6b35,43945ca0dd397066f3faca01334e978f",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"0bd0cf18be28862f80b66c929d6c185231757eca,03a875c2b460b5c008d7dc6adacd64522d6b418595c932d615bf78c937c71dc5,12442eda016e40b72e936bceb4277147",file,BACKWASH sample
+"161435d198f3dba6ac1ce045b73ccd61f7697146,11415ac829c17bd8a9c4cef12c3fbc23095cbb3113c89405e489ead5138384cd,bf6722f2055b13a61dfb7233af8d966a",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"9f524d58d79b3642627891bb573741d1c26b241e,0cf93de64aa4dba6cec99aa5989fc9c5049bc46ca5f3cb327b49d62f3646a852,52d8f2adf4a524b25feec1c82566f615",file,BACKWASH sample
+"db086131afaec88f4a4daa23973d214d666d39c0,11d8b9be14097614dedd68839c85e3e8feec08cdab675a5e89c5b055a6a68bad,eaa579d911b8a47eaaea744d59d14708",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"5526e922952cbe4fa50bded471b89bb563261817,4b55488c786a4d45beeb674f0a6e83ac50a0473aa1c487177f5cb4df5d1ac40b,cf7f4c005dca47ee66e8993e31fd724b",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"2d98f485162d3a01105a4e66667e8e0791a044c1,bf45a757c0d9e330460a0e6bb5016b96f6e6adf43be9bb9ba307b9fca8040a5c,d66f724eab5564ca8fe4b6ce91d515e9",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"e4935273ca73e715f2df73176825874d364b6fc9,98a7a3b44427d0f6a8b3653e2aa45d20398390874b5849659b82203a26ec15e6,407821503e851483bbc236ea83a22918",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"122b1f91680b85551bfca0c410999fff92ff618e,6851d6abd607e8c9801ab00e2ab94506d7a511cd94ac90fc7dbf3a98b487b7cd,3a1c259f80d67c75059bd109d20a22bd",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"0514b408f7debc4264617af8a4c1e2afc000de3b,ae2a387171f4476f4b178d5f69151da8cf45d1d26f55846f8c5dfd615bdea3aa,a3befceb2941aef71e8a2706a165f110",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"6c46b1582adef59b78ed9b054cc6d7300b9fab0d,88e11f58c1c999caa9855abaaed6c08f15e94c7bb35a2141bc77d5d845de0012,0bae3e92894683564f4064ee284119d7",file,XESKim sample
+"e793e80cee6bdd192bb792508ed4e829c7080757,802e7b3617246af112ed8f1e014d9d7227076f18b1bccd396fb43487c6792d6a,6c7a6486795bc8ca2414318a7f4e9f36",file,PNGEXE sample
+"f29e5093c9aca31f765c4c98fbc90a6ef9191a9b,306387222c7ef2726604fba3c062dc358dea1560041d705aa093fa16a5e93a6e,afcd08ed021440b3e8932e29c2b99b5b",file,PNGEXE sample
+www.hivnd.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"ac6260df96175e0b7d5d18ed8515886f7030db6f,2ddf38252bf39dabb6b8b1bef1afdab07fe2f3cbbc6b08c3b20c8d5eb3323824,a60a749d3fcbf4e840f47971dfd20727",file,PNGEXE sample
+ns1.xegroups.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+ajax.googleapis.com.hivnd.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+verify.authorize.net.hivnd.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+webmail.paycashs.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+www.paycashs.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+thxrq.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+hivnd.net,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+www.xegroups.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+idpcdn-cloud.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+joblly.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+rackxhr.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+hixrq.net,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+cdn-xhr.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+xegroups.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+hivnd.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+baucua.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+mail.xegroups.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+mail.paycashs.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+ns2.hivnd.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+ns1.hivnd.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+paycashs.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+ns2.xegroups.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+buygetdiscount.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+loinhuancao.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+dongtanphat.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+guiquare.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+mylanshop.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+hegpt.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+sanmuaban.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+sanmuaban.net,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+xemembers.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+xeson.net,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+woodofvietnam.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+xeadult.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+noithatgiare.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+xedob.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+171.240.181.151,ipaddress,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+xework.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"3b83c66c6c35163590b9e97404d0d6d8729c37af,47f43a2c395eeb07b44ee0d30cafb34611d7aeac4c2eb5457ab4c8d5466b21e5,344ef2589d9d85e180189ff4ba33bb95",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+171.239.160.17,ipaddress,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"019d4ae42f858d5ea65f3b71392dd37efec6c882,02c48917b15015ddd02738bc1f480f9c6379165618435855030f4c63ce372485,7a15cdb53c6c2a8e40a03dcf15195aef",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+xeminer.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"01e8daa66e60e453d6cc99a39796208539b50e95,d2fa98019f5f2cb99c1763612adf0e190381c8367370acb9a39f0a6436dabd91,246b79517b264fade1ff717b8a2ffdbb",file,XESKim sample
+"342e7fe54de2a60bbb82d29af375385d4ba335fe,815d262d38a26d5695606d03d5a1a49b9c00915ead1d8a2c04eb47846100e93f,37e173b932596af62fefc4dc10c8551d",file,BACKWASH sample
+imap.xegroups.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+webmail.xegroups.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+mail.restapi.xegroups.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+subinput.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+secure.subinput.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+amazon.xegroups.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+ns1.paycashs.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+ns1.restapi.xegroups.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+google-analytics.com.hivnd.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+ns1.subinput.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+mail.xeminer.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+ns1.xeminer.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+object.fm,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+ns2.paycashs.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+adfs.xegroups.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+www.xeminer.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+ns2.xeminer.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+ns2.object.fm,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+object.sbs,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"89bed25442c981eb04da5b87541167304d19307f,4c006c4c8249feb210ebdc517123eab83df932c118f5d5a3708cb73ad3a5b9fc,a9fd1db3ea8c4f4e2859d32e3c147342",file,SLIVER sample
+"f21b370ef303aaf28a564fab47a6210e2360e3de,16f7abb3a112d651c015d3f8c16f9ff94a8a2339b1ec1ef5e51adb7fb6805d54,fc7df21f238fd0341261e2c8d7499b6d",file,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"5e99bc4bc0c0eb4609683121a24798c99031d77a,6d117ae913d975bca2f27194c7b8f8681aa1c3a42b1b2019fe2e71adbd32a757,1e5494afed2990f9b59d317049f9a714",file,SLIVER sample
+3.23.54.176,ipaddress,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"d9180227f269d078a9f20aebb5d7ed0080ea5779,f2642c6179a06c3a98d9e5499ebc14c249e34e61fb88d065b0125ca1ad7290d5,6350c80dc855322b054c0a96aa49abc6",file,XESKim sample
+54.175.231.93,ipaddress,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"e0377245b238182abb16fbddedacb942a68b149b,a387514b5d8fcf61a694a2ae7e54bfb491ae54d9b134036b5b64df7dfd783744,08f385ceae05830eef2f072c26a9ee31",file,SLIVER sample
+addthiis.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"69136f58ac97caae98ae00414ed933d3738a90c2,e81bbc4c297c1f7ab1af766951926a0ff9b8cfb77d5081831abfc3aa216d0dad,f8e1752e1b32369e9185a70bee172a47",file,SLIVER sample
+"74c2ff409c2e94d133bfa43ed9ad89c4873727cf,706e39f1a27933ce703eb4d0a382a4690c58c36f61b2ff3144437f9af0295ff9,dde71fbcc52910fe9adb9e8b1d7dc15b",file,SLIVER sample
+"9fb5ce9bdeebf7f3bcdee902e8f2422a8a5d5b0d,8738e197cb75867a95e906dd050e25acb35daf579feab1759d1620a247ee54db,58f274e58bbe1ed3c557a6246455d761",file,SLIVER sample
+"186fd3584e922223ddde243a685a20680640e336,348e8494d32e6f7e8dcbe1f295ca9efd2af047d92d73eaf0091cd20efe48eb79,8d508ad54b90222efdfbbdbaf12cbb29",file,XESKim sample
+"f1b4d40e84a0cbfaaf4b0d375e0c86e0762d711b,1f1cf7d1a635f9caf1ea4a5389a4ddb8992b9c2c99c8f5c2bdcd950a7266fa3e,721cb0b572df2a4eb0918421e8dc177d",file,SLIVER sample
+"f703dd29c332c8a51c0e82109d983716869911d0,39625114fe25c055d261ee0c427a5ca3022b58a5654d6da1222898ccfd3a8013,e368f18e139ffd5285ce6bb8f4a5b7d4",file,SLIVER sample
+addthiis.net,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+emvnhim.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+www.baucua.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+"1e9243fe694f33440bdaa11df6bf422e145a5880,62e1eadf47aee6d568fadf33cd8140739a0caf9a70b3980123a271b19457d413,4bd4597c9043510968c20c075305d95c",file,SLIVER sample
+va00.addthiis.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+s7.addthiis.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+www.addthiis.net,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+www.object.sbs,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+cf.addthiis.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+3.235.253.255,ipaddress,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+vp2-www.addthiis.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+51.68.173.160,ipaddress,SLIVER sample
+88.80.147.46,ipaddress,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+www.emvnhim.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+www.addthiis.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+3.12.152.173,ipaddress,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+vhimne.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+www.vhimne.com,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
+webmail.object.fm,hostname,Infrastructure and samples uncovered relating to Vietnamese Credit Card Skimming actor XEGroup.
