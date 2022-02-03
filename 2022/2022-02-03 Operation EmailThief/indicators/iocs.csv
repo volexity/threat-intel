@@ -1,0 +1,62 @@
+value,entity_type,description
+www.newsonline.gq,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+mx.newsonline.gq,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+www.spiritx.ga,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+support.newsonline.gq,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+www.thunderchannel.tk,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+shadownight.playquicksand.tk,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+www.windsoft.cf,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+tigerstrike.iceywindflow.ml,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+shadowmaster.iceywindflow.ml,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+www.iceywindflow.gq,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+chargedboltsentry.spiritfield.tk,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+newsonline.gq,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+spiritx.ga,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+secretstep.tk,hostname,Infrastructure used in conjunction with Zimbra 0-day. Initial domain used to redirect users to malicious Zimbra URL.
+spiritfield.ga,hostname,Infrastructure used in conjunction with Zimbra 0-day. Used in reconnaissance emails to validate if addresses were real before sending real payload later.
+www.news-voice.ml,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+www.findtruth.ml,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+news-online.ml,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+iceywindflow.gq,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+playquicksand.tk,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+windsoft.cf,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+findtruth.ml,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+iceywindflow.ml,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+news-voice.ml,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+bruising-intellect.ml,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+thunderchannel.tk,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+spiritfield.ml,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+iceywindflow.cf,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+thunderchannel.cf,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+spiritfield.tk,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+update.secretstep.tk,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+mail.bruising-intellect.ml,hostname,Infrastructure used in conjunction with Zimbra 0-day. Hosted malicious JS used to steal user mail and was C2 for that malicious JS.
+www.news-online.ml,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+www.thunderchannel.cf,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+www.spiritfield.ga,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+winderosion.spiritfield.ml,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+flameshock.spiritfield.tk,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+windsource.thunderchannel.cf,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+yahoo-movie.spiritx.ga,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+windsource.thunderchannel.tk,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+opticaleel.iceywindflow.cf,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+shadownight.spiritfield.ga,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+206.166.251.141,ipaddress,Resolution for known domain associated with Zimbra Exploitation
+206.166.251.166,ipaddress,Resolution for known domain associated with Zimbra Exploitation
+108.160.133.32,ipaddress,Suspected related C2 server
+172.86.75.158,ipaddress,Resolution for known domain associated with Zimbra Exploitation
+www.yahoo-corporation.ml,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+amazon-check.gq,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+amazon-team.tk,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+yahoo-corporation.ml,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+playquicksand.gq,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+yahoo-corporation.tk,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+playquicksand.cf,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+spiritfield.cf,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+amazon-check.ga,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+amazon-check.cf,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+amazon-check.tk,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+playquicksand.ml,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+www.playquicksand.cf,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+www.amazon-check.ga,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 
+www.playquicksand.gq,hostname,Infrastructure likely used in conjunction with Zimbra 0-day 

