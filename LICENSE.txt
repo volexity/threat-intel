@@ -1,4 +1,4 @@
-Copyright 2021 by Volexity, Inc.
+Copyright 2022 by Volexity, Inc.
 
 The 2-Clause BSD License
 
