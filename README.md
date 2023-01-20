@@ -1,6 +1,12 @@
 # threat-intel
 
-This repository contains IoCs related to Volexity public threat intelligence blog posts.
+This repository contains IoCs related to Volexity public threat intelligence blog posts and tools published by Volexity's threat intelligence team.
+
+## Tools
+
+Tools published by the team can be found in the "tools" folder. Details on licensing for each tool can be found in the LICENSE.MD file in each directory.
+
+## IOCs
 
 They are organised by year, and within each year, each folder relates to a specific post.
 
