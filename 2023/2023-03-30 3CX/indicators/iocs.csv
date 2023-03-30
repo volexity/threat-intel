@@ -1,0 +1,35 @@
+value,entity_type,description
+www.azuredeploystore.com,hostname,Indicators related to the supply chain attack on 3CX
+www.journalide.org,hostname,Indicators related to the supply chain attack on 3CX
+philip.je@proton.me,emailwhois,Indicators related to the supply chain attack on 3CX
+jackiewcaudill@gmail.com,emailwhois,Indicators related to the supply chain attack on 3CX
+remey.simpson@outlook.com,emailwhois,Indicators related to the supply chain attack on 3CX
+journalide.org,hostname,Indicators related to the supply chain attack on 3CX
+akamaitechcloudservices.com,hostname,Indicators related to the supply chain attack on 3CX
+sourceslabs.com,hostname,Indicators related to the supply chain attack on 3CX
+azuredeploystore.com,hostname,Indicators related to the supply chain attack on 3CX
+glcloudservice.com,hostname,Indicators related to the supply chain attack on 3CX
+zacharryblogs.com,hostname,Indicators related to the supply chain attack on 3CX
+dunamistrd.com,hostname,Indicators related to the supply chain attack on 3CX
+azureonlinestorage.com,hostname,Indicators related to the supply chain attack on 3CX
+pbxphonenetwork.com,hostname,Indicators related to the supply chain attack on 3CX
+msedgepackageinfo.com,hostname,Indicators related to the supply chain attack on 3CX
+pbxcloudeservices.com,hostname,Indicators related to the supply chain attack on 3CX
+pbxsources.com,hostname,Indicators related to the supply chain attack on 3CX
+officeaddons.com,hostname,Indicators related to the supply chain attack on 3CX
+haroldjmarable@gmail.com,emailwhois,Indicators related to the supply chain attack on 3CX
+msstorageboxes.com,hostname,Indicators related to the supply chain attack on 3CX
+azureonlinecloud.com,hostname,Indicators related to the supply chain attack on 3CX
+akamaicontainer.com,hostname,Indicators related to the supply chain attack on 3CX
+visualstudiofactory.com,hostname,Indicators related to the supply chain attack on 3CX
+sbmsa.wiki,hostname,Indicators related to the supply chain attack on 3CX
+officestoragebox.com,hostname,Indicators related to the supply chain attack on 3CX
+qwepoi123098.com,hostname,Indicators related to the supply chain attack on 3CX
+cliego.garcia@proton.me,emailwhois,Indicators related to the supply chain attack on 3CX
+msstorageazure.com,hostname,Indicators related to the supply chain attack on 3CX
+"59e1edf4d82fae4978e97512b0331b7eb21dd4b838b850ba46794d9c7a2c0983,bfecb8ce89a312d2ef4afc64a63847ae11c6f69e,0eeb1c0133eb4d571178b2d9d14ce3e9",file,MSI installer for 3CX containing backdoored ffmpeg.dll
+"7986bbaee8940da11ce089383521ab420c443ab7b15ed42aed91fd31ce833896,bf939c9c261d27ee7bb92325cc588624fca75429,74bc2d0b6680faa1a5a76b27e5479cbc",file,Backdoored copy of ffmpeg.dll
+"f79c3b0adb6ec7bcc8bc9ae955a1571aaed6755a28c8b17b1d7595ee86840952,894e7d4ffd764bb458809c7f0643694b036ead30,11bc82a9bd8297bd0823bce5d6202082",file,Inner object from ffmpeg.dll
+"8ab3a5eaaf8c296080fadf56b265194681d7da5da7c02562953a4cb60e147423,3b3e778b647371262120a523eb873c20bb82beaf,7faea2b01796b80d180399040bb69835",file,ICONIC Stealer payload
+"e6bbc33815b9f20b0cf832d7401dd893fbc467c800728b5891336706da0dbcec,3dc840d32ce86cebf657b17cef62814646ba8e98,d5101c3b86d973a848ab7ed79cd11e5a",file,MacOS installer for 3CX containing backdoored ffmpeg.dll
+"a64fa9f1c76457ecc58402142a8728ce34ccba378c17318b3340083eeb7acc67,769383fc65d1386dd141c960c9970114547da0c2,660ea9b8205fbd2da59fefd26ae5115c",file,MACOS backdoored libffmpeg.dylib
