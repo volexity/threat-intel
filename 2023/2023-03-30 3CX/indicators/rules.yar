@@ -22,9 +22,9 @@ rule apt_ico_uta0040_b64_c2 : UTA0040
                 (
                 for all i in (1..4):
                     (
-            // in range [a-zA-Z]
+                        // in range [0-9a-zA-Z]
                         uint8(@IEND_dollar[k]+!IEND_dollar[k] + i ) < 123 and
-                        uint8(@IEND_dollar[k]+!IEND_dollar[k] + i) > 64
+                        uint8(@IEND_dollar[k]+!IEND_dollar[k] + i) > 47
                     )
                 )
         )
