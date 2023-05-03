@@ -26,6 +26,10 @@ Following successful installation of OneNoteExtractor a new CLI utility will be 
 
 `one-extract /path/to/file.one --extract-meta`
 
+### Extract embedded files from a password protected notebook with password 1234
+
+`one-extract /path/to/file.one --extract-files --password 1234`
+
 ## Disclaimer
 
 This is only intended as an interim solution, until someone with a greater understanding of the `.one` file format comes up with something more robust.

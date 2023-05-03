@@ -30,6 +30,8 @@ def run():
                         action="store_true")
     parser.add_argument("--output-directory", help="Where should extracted objects be saved to?",
                         default=os.getcwd())
+    parser.add_argument("--password", help="Password to use to extract files from encrypted "
+                        "onenote files", action="store")
     parser.add_argument("--version", action="version", help="print the version of one-extract",
                         version=__version__)
     args = parser.parse_args()
@@ -40,7 +42,7 @@ def run():
     with open(args.target_file, 'rb') as infile:
         data = infile.read()
 
-    document = OneNoteExtractor(data)
+    document = OneNoteExtractor(data=data, password=args.password)
     # Extract subfile objects from the document
     if args.extract_files:
         for index, file_data in enumerate(document.extract_files()):

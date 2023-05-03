@@ -5,16 +5,22 @@
 
 # builtins
 from datetime import datetime, timedelta
-
+import base64
 import logging
+from io import BytesIO
 import json
 import re
 import struct
 from typing import Iterator
+from xml.dom.minidom import parseString
+
+# installables
+from msoffcrypto.method.ecma376_agile import ECMA376Agile
 
 EMBEDDED_FILE_MAGIC = b"\xe7\x16\xe3\xbd\x65\x26\x11\x45\xa4\xc4\x8d\x4d\x0b\x7a\x9e\xac"  # noqa E501
 TITLE_MAGIC = b"\xf3\x1c\x00\x1c\x30\x1c\x00\x1c\xff\x1d\x00\x14\x82\x1d\x00\x14"  # noqa E501
 HEADER = b"\xe4\x52\x5c\x7b\x8c\xd8\xa7\x4d\xae\xb1\x53\x78\xd0\x29\x96\xd3"
+ENC_ONENOTE_MARKER = b"http://schemas.microsoft.com/office/2006/keyEncryptor/password"
 
 # Files used for testing
 # 93fb9f37eb70c095e26cedc594ca55ab27710039d0f4e92878e6539975ae58aa
@@ -78,7 +84,9 @@ class OneNoteMetadataObject(object):
 class OneNoteExtractor:
     """Simple OneNoteExtractor class to assist in extraction of embedded files."""
 
-    def __init__(self, data: bytes) -> None:
+    def __init__(self,
+                 data: bytes,
+                 password: str = None) -> None:
         """Init a OneNoteExtractor object.
 
         :param data: file data from a .one file
@@ -86,9 +94,15 @@ class OneNoteExtractor:
         :raises OneNoteExtractorException: when data doesn't match known .one file format
         """
         self.data = data
+        self.enc_info = None
         self.is_valid = self._is_valid()
         if self.is_valid is False:
             raise OneNoteExtractorException("Invalid OneNote file encountered")
+        if self._is_password_protected():
+            if not password:
+                raise OneNoteExtractorException("PasswordProtected OneNote file encountered but no"
+                                                " password was supplied.")
+            self.enc_info = self.derive_enc_info(password)
 
     def _is_valid(self) -> bool:
         """Check if the first 16 bytes in `self.data` match known OneNote file header structure."""
@@ -97,10 +111,100 @@ class OneNoteExtractor:
         else:
             return False
 
+    def _is_password_protected(self) -> bool:
+        """Check the first megabyte of data for indicators that the file is password protected.
+
+        Returns:
+            bool: _description_
+        """
+        # !TODO - this is a brittle check that probably could be improved.
+        if ENC_ONENOTE_MARKER in self.data[0:1000000]:
+            return True
+        return False
+
     def _get_time(self, date: bytes) -> datetime:
+        """Convert byte representation of datetime to python datetime object.
+
+        Args:
+            date (bytes): Bytes to convert
+
+        Returns:
+            datetime: Converted datetime.
+        """
         i_value = struct.unpack("<Q", bytearray(date))[0]
         h_value = datetime(1601, 1, 1) + timedelta(microseconds=i_value / 10)
         return h_value
+
+    def _decrypt_embedded_object(self, blob: bytes):
+        """Decrypt an embedded object `blob` using self.enc_info."""
+        # If this is called enc_info should be populated, but we'll check just incase.
+        if not self.enc_info:
+            raise OneNoteExtractorException("Unreachable code reached")
+        buf = BytesIO(blob)
+        obuf = ECMA376Agile.decrypt(key=self.enc_info['secret_key'],
+                                    keyDataSalt=self.enc_info["keyDataSalt"],
+                                    hashAlgorithm=self.enc_info["keyDataHashAlgorithm"],
+                                    ibuf=buf)
+        return obuf[8:]
+
+    def derive_enc_info(self,
+                        password: str) -> dict:
+        """Derive the encryption info required to decrypt embedded objects.
+
+        Args:
+            password (str): The password used to encrypt the notebook.
+
+        Returns:
+            dict: A dictionary containing data required to decrypt embedded objects.
+                 Structure is:
+                    {'secret_key': '',
+                     'keyDataSalt': '',
+                     'keyDataHasAlgorithm': ''}
+        """
+        # Find the XML blob containing encryption parameters
+        match = re.search(pattern=b"<encryption xmlns=.*</encryption>", string=self.data)
+        enc_config = match.group()
+
+        # Parse the blob and read key parameters
+        xml = parseString(enc_config)
+        keyData = xml.getElementsByTagName("keyData")[0]
+        keyDataSalt = base64.b64decode(keyData.getAttribute("saltValue"))
+        keyDataHashAlgorithm = keyData.getAttribute("hashAlgorithm")
+
+        password_node = xml.getElementsByTagNameNS("http://schemas.microsoft.com/office/2006/keyEncryptor/password", "encryptedKey")[0]  # noqa:E501
+        spinValue = int(password_node.getAttribute("spinCount"))
+        encryptedKeyValue = base64.b64decode(password_node.getAttribute("encryptedKeyValue"))
+        encryptedVerifierHashInput = base64.b64decode(password_node.getAttribute("encryptedVerifierHashInput"))  # noqa:E501
+        encryptedVerifierHashValue = base64.b64decode(password_node.getAttribute("encryptedVerifierHashValue"))  # noqa:E501
+        passwordSalt = base64.b64decode(password_node.getAttribute("saltValue"))
+        passwordHashAlgorithm = password_node.getAttribute("hashAlgorithm")
+        passwordKeyBits = int(password_node.getAttribute("keyBits"))
+
+        verified = ECMA376Agile.verify_password(
+            password,
+            passwordSalt,
+            passwordHashAlgorithm,
+            encryptedVerifierHashInput,
+            encryptedVerifierHashValue,
+            spinValue,
+            passwordKeyBits,
+        )
+        if verified:
+            secret_key = ECMA376Agile.makekey_from_password(
+                password,
+                passwordSalt,
+                passwordHashAlgorithm,
+                encryptedKeyValue,
+                spinValue,
+                passwordKeyBits,
+            )
+            return {
+                'secret_key': secret_key,
+                'keyDataSalt': keyDataSalt,
+                'keyDataHashAlgorithm': keyDataHashAlgorithm,
+            }
+        raise OneNoteExtractorException("Decryption didn't work - wrong password supplied? "
+                                        f"Supplied password was: {password}")
 
     def extract_files(self) -> Iterator[bytes]:
         """Find embedded objects in .one files.
@@ -118,8 +222,17 @@ class OneNoteExtractor:
                 for counter, m in enumerate(match):
                     size_offset = m.start() + 16
                     size = self.data[size_offset:size_offset + 4]
-                    i_size = struct.unpack("<I", bytearray(size))[0]
-                    yield self.data[m.start() + 36: m.start() + 36 + i_size]
+                    size_bytes = bytearray(size)
+                    i_size = struct.unpack("<I", size_bytes)[0]
+                    blob = self.data[m.start() + 36: m.start() + 36 + i_size]
+                    if self.enc_info:
+                        # msoffcrypto-tool expects the blob to be of format
+                        # [4 bytes of size] [4 unknown bytes] [ data]
+                        # but the format in .one files is different, so we artificially
+                        # create a similar structure here.
+                        yield self._decrypt_embedded_object(size_bytes + b"\x00\x00\x00\x00" + blob)
+                    else:
+                        yield blob
                 logger.debug(f"{counter} files extracted.")
                 return
             except Exception as e:
@@ -134,6 +247,9 @@ class OneNoteExtractor:
 
         Returns an iterator containing those objects.
         """
+        if self.enc_info:
+            logger.error("Unable to extract metadata from encrypted .one files.")
+            return []
         match = re.finditer(TITLE_MAGIC, self.data, re.DOTALL)
         ret = []
         if match:

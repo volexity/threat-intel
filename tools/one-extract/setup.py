@@ -15,6 +15,8 @@ setup(
     python_requires  = ">=3.6.8",
     entry_points     = {"console_scripts": ["one-extract = onenoteextractor.cli:run"]},
     include_package_data= True,
-    install_requires = [],
+    install_requires = [
+        "msoffcrypto-tool"
+    ],
     version=__version__
 )
