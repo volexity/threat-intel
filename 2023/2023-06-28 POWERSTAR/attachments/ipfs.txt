@@ -1,0 +1,12 @@
+ipfs.io
+dweb.link
+gateway.ipfs.io
+ipfs.infure.io
+infura-ipfs.io
+ipfs.eternum.io
+hardbin.com
+cloudflare-ipfs.com
+cf-ipfs.com
+gateway.pinata.cloud
+2read.net
+ipfs.2read.net
