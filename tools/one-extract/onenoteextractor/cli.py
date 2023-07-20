@@ -4,12 +4,14 @@
 """Example script showing use of OneNoteExtractor."""
 
 import argparse
+import logging
 import os
 import textwrap
 
 from . import OneNoteExtractor
 from ._version import __version__
 
+logger = logging.getLogger(__name__)
 
 def run():
     """CLI entry point."""
@@ -24,6 +26,8 @@ def run():
         formatter_class=argparse.RawTextHelpFormatter,
     )
     parser.add_argument("target_file", type=str, help="Input file to parse")
+    parser.add_argument("--debug", help="If enabled, sets log level to debug",
+                        action="store_true")
     parser.add_argument("--extract-meta", help="If set, extracts metadata from .one file",
                         action="store_true")
     parser.add_argument("--extract-files", help="If set, extracts files from .one file",
@@ -39,6 +43,11 @@ def run():
     if not args.extract_meta and not args.extract_files:
         exit("Must either attempt to extract metadata or files.")
 
+    if args.debug:
+        logging.basicConfig(level=logging.DEBUG,
+                            format='%(asctime)s %(name)s %(levelname)-8s %(message)s',
+                            handlers=[logging.StreamHandler()])
+        logger.debug("Debug logging enabled.")
     with open(args.target_file, 'rb') as infile:
         data = infile.read()
 

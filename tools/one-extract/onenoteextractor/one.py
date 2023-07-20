@@ -11,11 +11,15 @@ from io import BytesIO
 import json
 import re
 import struct
+import traceback
 from typing import Iterator
 from xml.dom.minidom import parseString
 
 # installables
 from msoffcrypto.method.ecma376_agile import ECMA376Agile
+
+# locals
+from .enc import decrypt
 
 EMBEDDED_FILE_MAGIC = b"\xe7\x16\xe3\xbd\x65\x26\x11\x45\xa4\xc4\x8d\x4d\x0b\x7a\x9e\xac"  # noqa E501
 TITLE_MAGIC = b"\xf3\x1c\x00\x1c\x30\x1c\x00\x1c\xff\x1d\x00\x14\x82\x1d\x00\x14"  # noqa E501
@@ -41,7 +45,6 @@ ENC_ONENOTE_MARKER = b"http://schemas.microsoft.com/office/2006/keyEncryptor/pas
 # eb674dc2e3787de0948e0af5a50aa365b21eb2dd40c0ef9034e44ed1c46b11d1
 
 logger = logging.getLogger(__name__)
-
 
 class OneNoteExtractorException(Exception):
     """Custom exception handler for OneNoteExtractor."""
@@ -141,10 +144,10 @@ class OneNoteExtractor:
         if not self.enc_info:
             raise OneNoteExtractorException("Unreachable code reached")
         buf = BytesIO(blob)
-        obuf = ECMA376Agile.decrypt(key=self.enc_info['secret_key'],
-                                    keyDataSalt=self.enc_info["keyDataSalt"],
-                                    hashAlgorithm=self.enc_info["keyDataHashAlgorithm"],
-                                    ibuf=buf)
+        obuf = decrypt(key=self.enc_info['secret_key'],
+                       keyDataSalt=self.enc_info["keyDataSalt"],
+                       hashAlgorithm=self.enc_info["keyDataHashAlgorithm"],
+                       ibuf=buf)
         return obuf[8:]
 
     def derive_enc_info(self,
@@ -219,7 +222,8 @@ class OneNoteExtractor:
         if match:
             try:
                 counter = 0
-                for counter, m in enumerate(match):
+                for m in match:
+                    counter += 1
                     size_offset = m.start() + 16
                     size = self.data[size_offset:size_offset + 4]
                     size_bytes = bytearray(size)
@@ -230,6 +234,7 @@ class OneNoteExtractor:
                         # [4 bytes of size] [4 unknown bytes] [ data]
                         # but the format in .one files is different, so we artificially
                         # create a similar structure here.
+                        logger.debug("Decrypting embedded object")
                         yield self._decrypt_embedded_object(size_bytes + b"\x00\x00\x00\x00" + blob)
                     else:
                         yield blob
@@ -237,6 +242,8 @@ class OneNoteExtractor:
                 return
             except Exception as e:
                 logger.error(f"Error while parsing the file: {e}.")
+                if logger.getEffectiveLevel() == logging.DEBUG:
+                    traceback.print_exc()
                 return
         else:
             logger.debug("No embedded files found.")
@@ -261,8 +268,8 @@ class OneNoteExtractor:
                     size_offset = offset + 4 + (4 * i_adjustment)
                     size = self.data[size_offset:size_offset + 4]
                     i_size = struct.unpack("<I", bytearray(size))[0]
-                    str = self.data[size_offset + 4:size_offset + 4 + i_size]\
-                              .decode()
+                    logger.debug(f"title offset: {size_offset}")
+                    title_str = self.data[size_offset + 4:size_offset + 4 + i_size].decode()
                     creatDate_offset = size_offset + 4 + i_size + 32
                     creatDate = self.data[creatDate_offset:creatDate_offset + 8]
                     h_createDate = self._get_time(creatDate)
@@ -287,11 +294,11 @@ class OneNoteExtractor:
                     yield OneNoteMetadataObject(object_id=index,
                                                 offset=offset,
                                                 title_size=i_size,
-                                                title=str.replace("\x00", ""),
+                                                title=title_str.replace("\x00", ""),
                                                 creation_date=h_createDate,
                                                 last_modification_date=h_LastDate)
 
                 except Exception as e:
-                    logger.error(f"Error while parsing  object {cpt}")
+                    logger.error(f"Error while parsing object {cpt}")
                     logger.error(f"Error: {e}.")
         return ret
