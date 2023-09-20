@@ -6,7 +6,7 @@ rule apt_win_powerstar_persistence_batch : CharmingKitten
         description = "Detects the batch script used to persist PowerStar via Startup."
         hash1 = "9777f106ac62829cd3cfdbc156100fe892cfc4038f4c29a076e623dc40a60872"
         memory_suitable = 1
-        license = "Please see the license at the head of this rules file for acceptable use."
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
 
     strings:
         $s_1 = "e^c^h^o o^f^f"
@@ -25,7 +25,7 @@ rule apt_win_powerstar_memonly : CharmingKitten
         description = "Detects the initial stage of the memory only variant of PowerStar."
         hash1 = "977cf5cc1d0c61b7364edcf397e5c67d910fac628c6c9a41cf9c73b3720ce67f"
         memory_suitable = 1
-        license = "Please see the license at the head of this rules file for acceptable use."
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
 
     strings:
         $s_1 = "[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($in.substring(3)))"
@@ -70,7 +70,7 @@ rule apt_win_powerstar_logmessage : CharmingKitten
         date = "2023-05-16"
         description = "Detects interesting log message embedded in memory only version of PowerStar."
         memory_suitable = 1
-        license = "Please see the license at the head of this rules file for acceptable use."
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
 
     strings:
         $s_1 = "wau, ije ulineun mueos-eul halkkayo?"
@@ -84,7 +84,7 @@ rule apt_win_powerstar_lnk : CharmingKitten
         date = "2023-05-16"
         description = "Detects LNK command line used to install PowerStar."
         memory_suitable = 1
-        license = "Please see the license at the head of this rules file for acceptable use."
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
 
     strings:
         $p_1 = "-UseBasicParsing).Content; &(gcm i*x)$"
@@ -103,7 +103,7 @@ rule apt_win_powerstar_decrypt_function : CharmingKitten
         description = "Detects PowerStar decrypt function, potentially downloaded standalone and then injected."
         hash1 = "b79d28fe5e3c988bb5aadb12ce442d53291dbb9ede0c7d9d64eec078beba5585"
         memory_suitable = 1
-        license = "Please see the license at the head of this rules file for acceptable use."
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
 
     strings:
         $f_1 = "function Borjol{"
@@ -127,7 +127,7 @@ rule apt_win_powerstar : CharmingKitten
         date = "2021-10-13"
         hash1 = "de99c4fa14d99af791826a170b57a70b8265fee61c6b6278d3fe0aad98e85460"
         memory_suitable = 1
-        license = "Please see the license at the head of this rules file for acceptable use."
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
 
     strings:
         $appname = "[AppProject.Program]::Main()" ascii wide // caller for C# code
