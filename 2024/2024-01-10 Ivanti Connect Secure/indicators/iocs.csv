@@ -1,0 +1,17 @@
+value,entity_type,description
+206.189.208.156,ipaddress,DigitalOcean IP address tied to UTA0178.
+gpoaccess.com,hostname,Suspected UTA0178 domain discovered via domain registration patterns
+webb-institute.com,hostname,Suspected UTA0178 domain discovered via domain registration patterns
+symantke.com,hostname,UTA0178 domain used to collect credentials from compromised devices
+75.145.243.85,ipaddress,UTA0178 IP address observed interacting with compromised device
+47.207.9.89,ipaddress,UTA0178 IP address observed interacting with compromised device tied to Cyberoam proxy network
+98.160.48.170,ipaddress,UTA0178 IP address observed interacting with compromised device tied to Cyberoam proxy network
+173.220.106.166,ipaddress,UTA0178 IP address observed interacting with compromised device tied to Cyberoam proxy network
+73.128.178.221,ipaddress,UTA0178 IP address observed interacting with compromised device tied to Cyberoam proxy network
+50.243.177.161,ipaddress,UTA0178 IP address observed interacting with compromised device tied to Cyberoam proxy network
+50.213.208.89,ipaddress,UTA0178 IP address observed interacting with compromised device tied to Cyberoam proxy network
+64.24.179.210,ipaddress,UTA0178 IP address observed interacting with compromised device tied to Cyberoam proxy network
+75.145.224.109,ipaddress,UTA0178 IP address observed interacting with compromised device tied to Cyberoam proxy network
+50.215.39.49,ipaddress,UTA0178 IP address observed interacting with compromised device tied to Cyberoam proxy network
+71.127.149.194,ipaddress,UTA0178 IP address observed interacting with compromised device tied to Cyberoam proxy network
+173.53.43.7,ipaddress,UTA0178 IP address observed interacting with compromised device tied to Cyberoam proxy network
