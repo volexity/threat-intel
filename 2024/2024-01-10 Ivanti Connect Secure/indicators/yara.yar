@@ -1,4 +1,3 @@
-
 rule apt_webshell_pl_complyshell: UTA0178
 {
     meta:
