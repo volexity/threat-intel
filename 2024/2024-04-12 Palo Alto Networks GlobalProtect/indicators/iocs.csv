@@ -1,0 +1,20 @@
+value,entity_type,description
+198.58.109.149,ipaddress,server used by the attacker to host malicious files
+144.172.79.92,ipaddress,server used by the attacker to host malicious files
+172.233.228.93,ipaddress,server used by the attacker to host malicious files
+3de2a4392b8715bad070b2ae12243f166ead37830f7c6d24e778985927f9caac,file,UPSTYLE webshell
+35a5f8ac03b0e3865b3177892420cb34233c55240f452f00f9004e274a85703c,file,reverse shell script
+755f5b8bd67d226f24329dc960f59e11cb5735b930b4ed30b2df77572efb32e8,file,reverse shell script
+adba167a9df482aa991faaa0e0cde1182fb9acfbb0dc8d19148ce634608bab87,file,post exploitation script
+c1a0d380bf55070496b9420b970dfc5c2c4ad0a598083b9077493e8b8035f1e9,file,post exploitation script
+fe07ca449e99827265ca95f9f56ec6543a4c5b712ed50038a9a153199e95a0b7,file,post exploitation script
+96dbec24ac64e7dd5fef6e2c26214c8fe5be3486d5c92d21d5dcb4f6c4e365b9,file,post exploitation script
+448fbd7b3389fe2aa421de224d065cea7064de0869a036610e5363c931df5b7c,file,GOST sample
+e315907415eb8cfcf3b6a4cd6602b392a3fe8ee0f79a2d51a81a928dbce950f8,file,post exploitation script
+161fd76c83e557269bee39a57baa2ccbbac679f59d9adff1e1b73b0f4bb277a6,file,reverse shell Go sample
+71.9.135.100,ipaddress,Compromised ASUS router used by attacker to interact with compromised devices
+89.187.187.69,ipaddress,Surfshark VPN address used in exploitation attempts.
+nhdata.s3-us-west-2.amazonaws.com,hostname,Compromised S3 bucket used to host files by UTA0218
+23.242.208.175,ipaddress,Compromised ASUS router used by attacker to interact with compromised devices
+137.118.185.101,ipaddress,Compromised ASUS router used by attacker to interact with compromised devices
+66.235.168.222,ipaddress,Surfshark VPN address used in exploitation attempts.
