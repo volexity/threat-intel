@@ -100,7 +100,7 @@ rule apt_malware_linux_disgomoji_2 : UTA0137
         7 of them
 }
 
-rule apt_malware_linux_gomoji_1: UTA0137
+rule apt_malware_linux_disgomoji_1: UTA0137
 {
     meta:
         author = "threatintel@volexity.com"
@@ -128,7 +128,7 @@ rule apt_malware_linux_gomoji_1: UTA0137
         4 of them
 }
 
-rule apt_malware_linux_gomoji_bogus_strings: UTA0137
+rule apt_malware_linux_disgomoji_bogus_strings: UTA0137
 {
     meta:
         author = "threatintel@volexity.com"
