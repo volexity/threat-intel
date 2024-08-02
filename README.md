@@ -2,6 +2,8 @@
 
 This repository contains IoCs related to Volexity public threat intelligence blog posts and tools published by Volexity's threat intelligence team.
 
+Public blog posts related to these IoCs can be found on the [Volexity website](https://www.volexity.com/blog/).
+
 In the past this repository was also used to store tools published by Volexity. These tools have now been moved into dedicated per-tool repositories which can be found [here](https://github.com/volexity).
 
 ## IOCs
