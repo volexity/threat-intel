@@ -1,6 +1,6 @@
 # threat-intel
 
-This repository contains IoCs related to Volexity public threat intelligence blog posts and tools published by Volexity's threat intelligence team.
+This repository contains IoCs related to Volexity public threat intelligence blog posts.
 
 Public blog posts related to these IoCs can be found on the [Volexity website](https://www.volexity.com/blog/).
 
