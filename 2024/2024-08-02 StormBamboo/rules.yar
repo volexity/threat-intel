@@ -172,9 +172,12 @@ rule apt_malware_macOS_gimmick: StormBamboo
 
 rule apt_malware_win_dustpan_apihashes: StormBamboo
 {
+    
     meta:
         author = "threatintel@volexity.com"
         date = "2023-08-17"
+        // NOTE, that the Volexity name 'DUSTPAN' refers to a different malware family to the 
+        // Mandiant malware of the same name.
         description = "Detects DUSTPAN malware using API hashes used to resolve functions at runtime."
         hash1 = "b77bcfb036f5a6a3973fdd68f40c0bd0b19af1246688ca4b1f9db02f2055ef9d"
         os = "win"
@@ -242,6 +245,8 @@ rule apt_malware_py_dustpan_pyloader: StormBamboo
     meta:
         author = "threatintel@volexity.com"
         date = "2023-07-21"
+        // NOTE, that the Volexity name 'DUSTPAN' refers to a different malware family to the 
+        // Mandiant malware of the same name.
         description = "Detects Python script used by KPlayer to update, modified by attackers to download a malicious payload."
         os = "all"
         os_arch = "all"
