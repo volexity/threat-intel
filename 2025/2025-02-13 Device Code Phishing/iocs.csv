@@ -1,0 +1,12 @@
+107.189.27.41,ipaddress,Resolution for known UTA0304 indicator
+172.86.93.30,ipaddress,Resolution for suspected UTA0304 indicator
+107.189.26.199,ipaddress,Resolution for suspected UTA0304 indicator
+144.172.113.77,ipaddress,Resolution for known UTA0304 indicator
+afpi-sec.com,hostname,Suspected UTA0304 domain
+chromeelevationservice.com,hostname,Suspected UTA0304 domain
+comms-net.com,hostname,UTA0304 domain
+sen-comms.com,hostname,UTA0304 domain
+androidstatics.com,hostname,Suspected UTA0304 domain
+rosejob.com,hostname,Domain used in UTA0307 phishing
+connect-71q.pages.dev,hostname,Domain used in UTA0307 phishing
+documents-exe.pages.dev,hostname,Hostname exhibiting similar URL pattern to known domain used in UTA0307 phishing
