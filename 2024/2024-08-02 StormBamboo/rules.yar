@@ -13,7 +13,7 @@ rule apt_malware_any_reloadext_plugin : StormBamboo
         report = "TIB-20240227"
         scan_context = "file,memory"
         severity = "critical"
-        last_modified = "2024-08-02T10:30:15.944063Z"
+        last_modified = "2024-08-02T10:30:15Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10282
         version = 4
@@ -46,7 +46,7 @@ rule apt_malware_macos_reloadext_installer : StormBamboo
         report = "TIB-20240227"
         scan_context = "file,memory"
         severity = "critical"
-        last_modified = "2024-08-02T10:29:51.112346Z"
+        last_modified = "2024-08-02T10:29:51Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10281
         version = 2
@@ -60,13 +60,12 @@ rule apt_malware_macos_reloadext_installer : StormBamboo
     condition:
         3 of them
 }
-
 rule apt_malware_any_macma_a: StormBamboo
 {
     meta:
         author = "threatintel@volexity.com"
         date = "2021-11-12"
-        description = "Detects variants of the MACMA backdoor, variants of MACMA have been discovered for Windows, macOS and android."
+        description = "Detects variants of the MACMA backdoor, variants of MACMA have been discovered for macOS and android."
         hash1 = "cf5edcff4053e29cb236d3ed1fe06ca93ae6f64f26e25117d68ee130b9bc60c8"
         hash2 = "9b71fad3280cf36501fe110e022845b29c1fb1343d5250769eada7c36bc45f70"
         hash3 = "623f99cbe20af8b79cbfea7f485d47d3462d927153d24cac4745d7043c15619a"
@@ -78,10 +77,10 @@ rule apt_malware_any_macma_a: StormBamboo
         report2 = "TIB-20240227"
         scan_context = "file,memory"
         severity = "critical"
-        last_modified = "2024-08-02T10:29:06.363756Z"
+        last_modified = "2024-08-02T10:33:39Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 6114
-        version = 8
+        version = 9
 
     strings:
         $magic1 = "curl -o %s http://cgi1.apnic.net/cgi-bin/my-ip.php" fullword ascii
@@ -123,7 +122,7 @@ rule apt_malware_macOS_gimmick: StormBamboo
         reference = "https://www.volexity.com/blog/2022/03/22/storm-cloud-on-the-horizon-gimmick-malware-strikes-at-macos/"
         scan_context = "file,memory"
         severity = "critical"
-        last_modified = "2024-08-02T10:28:38.849737Z"
+        last_modified = "2024-08-02T10:28:38Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 6022
         version = 8
@@ -169,15 +168,11 @@ rule apt_malware_macOS_gimmick: StormBamboo
         3 of ($msg*) or
         9 of ($cmd*)
 }
-
 rule apt_malware_win_dustpan_apihashes: StormBamboo
 {
-    
     meta:
         author = "threatintel@volexity.com"
         date = "2023-08-17"
-        // NOTE, that the Volexity name 'DUSTPAN' refers to a different malware family to the 
-        // Mandiant malware of the same name.
         description = "Detects DUSTPAN malware using API hashes used to resolve functions at runtime."
         hash1 = "b77bcfb036f5a6a3973fdd68f40c0bd0b19af1246688ca4b1f9db02f2055ef9d"
         os = "win"
@@ -186,7 +181,7 @@ rule apt_malware_win_dustpan_apihashes: StormBamboo
         report2 = "TIB-20231221"
         scan_context = "file"
         severity = "critical"
-        last_modified = "2024-08-02T10:46:54.205126Z"
+        last_modified = "2024-08-02T10:46:54Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 9591
         version = 3
@@ -208,7 +203,6 @@ rule apt_malware_win_dustpan_apihashes: StormBamboo
         6 of ($h*) and
         $magic
 }
-
 rule apt_malware_win_pocostick_jul23: StormBamboo
 {
     meta:
@@ -221,7 +215,7 @@ rule apt_malware_win_pocostick_jul23: StormBamboo
         report = "TIB-20231221"
         scan_context = "file,memory"
         severity = "critical"
-        last_modified = "2024-08-02T10:45:28.197138Z"
+        last_modified = "2024-08-02T10:45:28Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 9542
         version = 3
@@ -239,21 +233,18 @@ rule apt_malware_win_pocostick_jul23: StormBamboo
     condition:
         6 of them
 }
-
 rule apt_malware_py_dustpan_pyloader: StormBamboo
 {
     meta:
         author = "threatintel@volexity.com"
         date = "2023-07-21"
-        // NOTE, that the Volexity name 'DUSTPAN' refers to a different malware family to the 
-        // Mandiant malware of the same name.
         description = "Detects Python script used by KPlayer to update, modified by attackers to download a malicious payload."
         os = "all"
         os_arch = "all"
         report = "TIB-20231221"
         scan_context = "file,memory"
         severity = "critical"
-        last_modified = "2024-08-02T10:43:21.783375Z"
+        last_modified = "2024-08-02T10:43:21Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 9530
         version = 4
@@ -277,7 +268,6 @@ rule apt_malware_py_dustpan_pyloader: StormBamboo
         any of ($url_*) or
         $path_1
 }
-
 rule apt_malware_win_pocostick_b: StormBamboo
 {
     meta:
@@ -290,10 +280,10 @@ rule apt_malware_win_pocostick_b: StormBamboo
         report = "TIB-20231221"
         scan_context = "file"
         severity = "critical"
-        last_modified = "2024-08-02T10:36:51.060620Z"
+        last_modified = "2024-09-10T08:29:36Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 1678
-        version = 6
+        version = 7
 
     strings:
         $a1 = "AVCAesUtil@@" ascii
@@ -302,13 +292,19 @@ rule apt_malware_win_pocostick_b: StormBamboo
         $a4 = "AVCWinThread@@" ascii
 
     condition:
-        all of ($a*) or
-        for any resource in pe.resources:
-            // icon
-            (
-                hash.sha256(resource.offset, resource.length) == "b098afd3657b956edbace77499e5e20414ab595a17ffc437b9dadc791eff1cfa" or
-                hash.sha256(resource.offset, resource.length) == "2e53e960d45d657d8ba9929f6c8b34e90b2ae15b879768099474678dd1864f3b"
-            )
+        filesize < 20MB and
+        (
+          all of ($a*) or
+          (
+            pe.number_of_resources < 100 and
+            for any resource in pe.resources:
+              // icon
+              (
+                  hash.sha256(resource.offset, resource.length) == "b098afd3657b956edbace77499e5e20414ab595a17ffc437b9dadc791eff1cfa" or
+                  hash.sha256(resource.offset, resource.length) == "2e53e960d45d657d8ba9929f6c8b34e90b2ae15b879768099474678dd1864f3b"
+              )
+           )
+        )
 }
 rule apt_malware_elf_catchdns_aug20_memory: DriftingBamboo
 {
@@ -323,7 +319,7 @@ rule apt_malware_elf_catchdns_aug20_memory: DriftingBamboo
         report2 = "TIB-20231221"
         scan_context = "file,memory"
         severity = "critical"
-        last_modified = "2024-08-02T10:40:24.805247Z"
+        last_modified = "2024-08-02T10:40:24Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 227
         version = 10

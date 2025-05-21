@@ -5,12 +5,12 @@ rule apt_malware_win_deepdata_module: BrazenBamboo
         description = "Detects modules used by DEEPDATA based on the required export names used by those modules."
         date = "2024-07-30"
         hash1 = "c782346bf9e5c08a0c43a85d4991f26b0b3c99c054fa83beb4a9e406906f011e"
-        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         os = "win"
         os_arch = "all"
         scan_context = "file,memory"
         severity = "critical"
-        last_modified = "2024-11-14T11:42:20.625450Z"
+        last_modified = "2024-11-14T11:42:20Z"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10868
         version = 2
 
@@ -23,8 +23,6 @@ rule apt_malware_win_deepdata_module: BrazenBamboo
     condition:
         all of them
 }
-
-
 rule apt_malware_macos_lightspy_orchestrator_decoded_log_strings : BrazenBamboo
 {
     meta:
@@ -32,12 +30,12 @@ rule apt_malware_macos_lightspy_orchestrator_decoded_log_strings : BrazenBamboo
         description = "Detects the decoded LIGHTSPY orchestrator used for macOS samples. This is the core component of the malware that loads and executes the malicious plugins. This rule focuses on the unique log strings present in the binary."
         date = "2024-02-20"
         hash1 = "0f66a4daba647486d2c9d838592cba298df2dbf38f2008b6571af8a562bc306c"
-        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         os = "darwin"
         os_arch = "all"
         scan_context = "file"
         severity = "critical"
-        last_modified = "2024-07-03T13:28:27.558083Z"
+        last_modified = "2024-07-03T13:28:27Z"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10254
         version = 2
 
@@ -64,7 +62,6 @@ rule apt_malware_macos_lightspy_orchestrator_decoded_log_strings : BrazenBamboo
         uint32(0) == 0xfeedfacf
         and 4 of ($s*)
 }
-
 rule apt_malware_macos_lightspy_orchestrator_decoded : BrazenBamboo
 {
     meta:
@@ -72,12 +69,12 @@ rule apt_malware_macos_lightspy_orchestrator_decoded : BrazenBamboo
         description = "Detects the decoded LIGHTSPY orchestrator used for macOS samples. This is the core component of the malware that loads and executes the malicious plugins."
         date = "2024-02-20"
         hash1 = "0f66a4daba647486d2c9d838592cba298df2dbf38f2008b6571af8a562bc306c"
-        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         os = "darwin"
         os_arch = "all"
         scan_context = "file"
         severity = "critical"
-        last_modified = "2024-07-03T13:28:30.512409Z"
+        last_modified = "2024-07-03T13:28:30Z"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10253
         version = 2
 
@@ -120,12 +117,12 @@ rule apt_malware_macos_lightspy_lightloader_decoded : BrazenBamboo
         description = "Detects the decoded LIGHTSPYLOADER used for macOS samples. Based on the strings this seems to contain substantial copy and paste from a previous malware loader related to IRC."
         date = "2024-02-20"
         hash1 = "24cf61f172c94943079970af57f25ae50fee5f54797be045ef6eeeaefeaf4582"
-        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         os = "darwin"
         os_arch = "all"
         scan_context = "file"
         severity = "critical"
-        last_modified = "2024-07-03T13:28:24.882166Z"
+        last_modified = "2024-07-03T13:28:24Z"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10252
         version = 3
 
@@ -155,12 +152,12 @@ rule apt_malware_macos_lightspy_plist : BrazenBamboo
         description = "Detects the plist file created by the macOS variant of LIGHTSPY as part of its execution."
         date = "2024-02-20"
         hash1 = "23d0b9ae73145106cffe56719526801e024092cd6d25b9628ae3d9995b0b5395"
-        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         os = "darwin"
         os_arch = "all"
         scan_context = "file"
         severity = "high"
-        last_modified = "2024-07-03T13:28:33.414456Z"
+        last_modified = "2024-07-03T13:28:33Z"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10251
         version = 2
 
@@ -180,12 +177,12 @@ rule apt_malware_macos_lightspy_json_version : BrazenBamboo
         description = "Detects the JSON version file used by the macOS variant of the LightSpy malware family."
         date = "2024-02-15"
         hash1 = "862ab98280ced3f1dcf63699a1b690be4039e848dc0f440b8b306cf63c474090"
-        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         os = "all"
         os_arch = "all"
         scan_context = "file"
         severity = "critical"
-        last_modified = "2024-07-03T13:28:36.273991Z"
+        last_modified = "2024-07-03T13:28:36Z"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10249
         version = 2
 
@@ -205,12 +202,12 @@ rule apt_malware_macos_lightspy_json_manifest : BrazenBamboo
         description = "Detects the JSON manifest file used by the macOS variant of the LightSpy malware family."
         date = "2024-02-15"
         hash1 = "0482a09ed546229c691c659498ffba2d2164de792dea74fdc3a373be22f940dd"
-        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         os = "darwin"
         os_arch = "all"
         scan_context = "file"
         severity = "critical"
-        last_modified = "2024-07-03T13:28:39.019130Z"
+        last_modified = "2024-07-03T13:28:39Z"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10248
         version = 2
 
@@ -228,12 +225,12 @@ rule apt_malware_win_lightspy_json_manifest_decoded : BrazenBamboo
         description = "Detects the decoded JSON manifest file used by the Windows variant of the LightSpy malware family. This file is normally stored in an encoded state on the C2 server."
         date = "2024-02-15"
         hash1 = "f8f90f1f96679f583bea6592b20980acfe2d402be79fc7cf55b78e06b0afc3e6"
-        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         os = "all"
         os_arch = "all"
         scan_context = "file"
         severity = "critical"
-        last_modified = "2024-07-03T13:28:41.889987Z"
+        last_modified = "2024-07-03T13:28:41Z"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10247
         version = 2
 
@@ -251,12 +248,12 @@ rule apt_malware_win_lightspy_orchestrator_decoded_core : BrazenBamboo
         description = "Detects the decoded orchestrator for the Windows variant of the LightSpy malware family. This file is normally stored in an encoded state on the C2 server and is used as the core component of this malware family, loading additional plugins from the C2 whilst managing all the C2 communication etc."
         date = "2024-02-15"
         hash1 = "80c0cdb1db961c76de7e4efb6aced8a52cd0e34178660ef34c128be5f0d587df"
-        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         os = "win"
         os_arch = "all"
         scan_context = "file,memory"
         severity = "critical"
-        last_modified = "2024-07-03T13:31:30.717975Z"
+        last_modified = "2024-07-03T13:31:30Z"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10246
         version = 2
 
@@ -288,21 +285,21 @@ rule apt_malware_win_lightspy_orchestrator_decoded_core : BrazenBamboo
         1 of ($pdb*)
         or 5 of ($s*)
 }
-rule apt_malware_win_lightspy_orchestrator_decoded_C2_strings : BrazenBamboo
+rule apt_malware_win_lightspy_orchestrator_decoded_C2_strings: BrazenBamboo
 {
     meta:
         author = "threatintel@volexity.com"
         description = "Detects the decoded orchestrator for the Windows variant of the LightSpy malware family. This file is normally stored in an encoded state on the C2 server and is used as the core component of this malware family, loading additional plugins from the C2 whilst managing all the C2 communication etc."
         date = "2024-02-15"
         hash1 = "80c0cdb1db961c76de7e4efb6aced8a52cd0e34178660ef34c128be5f0d587df"
-        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         os = "win"
         os_arch = "all"
         scan_context = "file,memory"
         severity = "critical"
-        last_modified = "2024-07-03T13:31:32.783785Z"
+        last_modified = "2024-11-14T11:48:37Z"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10245
-        version = 2
+        version = 4
 
     strings:
         $s1 = "[WsClient][Error]:"
@@ -333,6 +330,7 @@ rule apt_malware_win_lightspy_orchestrator_decoded_C2_strings : BrazenBamboo
         $ctrl15 = "CTRL_AUTO_UPLOUD_FILE_CONFIG"
         $ctrl16 = "CTRL_UPLOUD_DEVICE_INFO"
         $ctrl17 = "CTRL_TEST_VPDN_ACCOUNT"
+
      condition:
         3 of ($s*)
         or 5 of ($ctrl*)
@@ -344,16 +342,17 @@ rule apt_malware_windows_deepdata_plugin : BrazenBamboo
         description = "Detects generic strings across multiple DEEPDATA plugins, a malware family from the BrazenBamboo threat actor."
         date = "2024-08-13"
         hash1 = "55e2dbb906697dd1aff87ccf275efd06ee5e43bb21ea7865aef59513a858cf9f"
-        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         os = "win"
         os_arch = "all"
         scan_context = "file"
         severity = "critical"
-        last_modified = "2024-08-14T14:20:07.914612Z"
+        last_modified = "2024-08-14T14:20:07Z"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10907
         version = 1
 
     strings:
+
         $s1 = "[ExecuteCommand]do not support this command %d."
         $s2 = "[ExecuteCommand]input cmd %d error."
         $s3 = "[ExecuteCommand]ExecuteCommand start."
@@ -369,14 +368,14 @@ rule apt_malware_windows_deepdata_outlook_plugin : BrazenBamboo
         description = "Detects the Outlook plugin used by the DEEPDATA malware family from the BrazenBamboo threat actor. This rule focusses on unique strings contained within the binary."
         date = "2024-08-13"
         hash1 = "2bfb82a43bb77127965a4011a87de845242b1fb98fd09085885be219e0499073"
-        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         os = "win"
         os_arch = "all"
         scan_context = "file"
         severity = "critical"
-        last_modified = "2024-08-14T14:19:00.740897Z"
+        last_modified = "2024-11-14T11:49:09Z"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10906
-        version = 1
+        version = 2
 
     strings:
         $outlook1 = "[Export]Initialize Outlook Client Fail.%x"
@@ -399,12 +398,12 @@ rule apt_malware_windows_deepdata_accountinfo_plugin : BrazenBamboo
         description = "Detects the AccountInfo plugin used by the DEEPDATA malware family from the BrazenBamboo threat actor. Sometimes called the Pass plugin. This rule focused on unique strings contained within the binary."
         date = "2024-08-13"
         hash1 = "041c13a29d3bee8d2e4bd9d8bde8152b5ac8305c1efcc198244b224e33635282"
-        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         os = "win"
         os_arch = "all"
         scan_context = "file"
         severity = "critical"
-        last_modified = "2024-08-14T14:18:29.128235Z"
+        last_modified = "2024-08-14T14:18:29Z"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10905
         version = 1
 
@@ -432,23 +431,21 @@ rule apt_malware_windows_deepdata_accountinfo_plugin : BrazenBamboo
         uint16be(0) == 0x4d5a
         and 4 of ($account*)
 }
-
-rule apt_malware_windows_deepdata_socialsoft_plugin : BrazenBamboo
+rule apt_malware_win_deepdata_socialsoft_plugin : BrazenBamboo
 {
     meta:
         author = "threatintel@volexity.com"
         description = "Detects the SocialSoft plugin used by the DEEPDATA malware family from the BrazenBamboo threat actor. This rule focused on unique strings contained within the binary."
         date = "2024-08-13"
         hash1 = "c3995f28476f7a775f4c1e8be47c64a300e0f16535dc5ed665ba796f05f19f73"
-        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         os = "win"
         os_arch = "all"
         scan_context = "file"
         severity = "critical"
-        last_modified = "2024-08-14T14:17:58.701231Z"
-        
+        last_modified = "2025-01-29T16:27:27Z"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10904
-        version = 1
+        version = 2
 
     strings:
         $social1 = "execute cmd=%d, detail=%s in module."
@@ -470,7 +467,6 @@ rule apt_malware_windows_deepdata_socialsoft_plugin : BrazenBamboo
         uint16be(0) == 0x4d5a
         and 4 of ($social*)
 }
-
 rule apt_malware_windows_deepdata_systeminfo_plugin : BrazenBamboo
 {
     meta:
@@ -478,12 +474,12 @@ rule apt_malware_windows_deepdata_systeminfo_plugin : BrazenBamboo
         description = "Detects the SystemInfo plugin used by the DEEPDATA malware family from the BrazenBamboo threat actor. This rule focused on unique strings contained within the binary."
         date = "2024-08-13"
         hash1 = "213520170fc7113ac8f5e689f154f5c8074dd972584b56d820c19d84b7e5b477"
-        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         os = "win"
         os_arch = "all"
         scan_context = "file"
         severity = "critical"
-        last_modified = "2024-08-14T14:17:25.585400Z"
+        last_modified = "2024-08-14T14:17:25Z"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10903
         version = 1
 
@@ -515,21 +511,21 @@ rule apt_malware_windows_deepdata_systeminfo_plugin : BrazenBamboo
             or 3 of ($api*)
         )
 }
-rule apt_malware_windows_deepdata_tdmonitor_plugin : BrazenBamboo
+rule apt_malware_win_deepdata_tdmonitor_plugin: BrazenBamboo
 {
     meta:
         author = "threatintel@volexity.com"
         description = "Detects the Tdmonitor plugin used by the DEEPDATA malware family from the BrazenBamboo threat actor. This rule focused on unique strings contained within the binary."
         date = "2024-08-13"
         hash1 = "3927220878bae3a39bed8d9f2db27d2856a752d132ec10a9e4b58703185196f5"
-        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         os = "win"
         os_arch = "all"
         scan_context = "file"
         severity = "critical"
-        last_modified = "2024-08-14T14:16:53.360352Z"
+        last_modified = "2025-01-29T16:27:20Z"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10902
-        version = 1
+        version = 2
 
     strings:
         $tdm1 = "{\"cmd\":65002,\"status\":2}"
@@ -557,12 +553,12 @@ rule apt_malware_windows_deepdata_webbrowser_plugin : BrazenBamboo
         description = "Detects the WebBrowser plugin used by the DEEPDATA malware family from the BrazenBamboo threat actor. This rule focused on unique strings contained within the binary."
         date = "2024-08-13"
         hash1 = "b523cdd1669dbd7ab68b43fd20f30a790ec0351876a0610958b9405468753a10"
-        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         os = "win"
         os_arch = "all"
         scan_context = "file"
         severity = "critical"
-        last_modified = "2024-08-14T14:16:15.280468Z"
+        last_modified = "2024-08-14T14:16:15Z"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10901
         version = 1
 
@@ -591,12 +587,12 @@ rule apt_malware_windows_deepdata_wifilist_plugin : BrazenBamboo
         description = "Detects the WifiList plugin used by the DEEPDATA malware family from the BrazenBamboo threat actor. This rule focused on unique strings contained within the binary."
         date = "2024-08-13"
         hash1 = "460f1a00002e1c713a7753293b4737e65d27d0b65667b109d66afca873c23894"
-        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         os = "win"
         os_arch = "all"
         scan_context = "file"
         severity = "critical"
-        last_modified = "2024-08-14T14:15:41.593561Z" 
+        last_modified = "2024-08-14T14:15:41Z"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10900
         version = 1
 

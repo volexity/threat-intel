@@ -1,14 +1,20 @@
-rule apt_js_sharpext : SharpTongue
+rule apt_malware_js_sharpext: SharpPine
 {
     meta:
         author = "threatintel@volexity.com"
         date = "2021-09-14"
-        description = "A malicious Chrome browser extention used by the SharpTongue threat actor to steal mail data from a victim."
+        description = "A malicious Chrome browser extension used by the SharpPine threat actor to steal Gmail data from a victim."
         hash1 = "1c9664513fe226beb53268b58b11dacc35b80a12c50c22b76382304badf4eb00"
         hash2 = "6025c66c2eaae30c0349731beb8a95f8a5ba1180c5481e9a49d474f4e1bb76a4"
         hash3 = "6594b75939bcdab4253172f0fa9066c8aee2fa4911bd5a03421aeb7edcd9c90c"
-        memory_suitable = 1
+        os = "all"
+        os_arch = "all"
+        scan_context = "file,memory"
+        severity = "critical"
+        last_modified = "2025-05-21T15:18:14Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
+        rule_id = 5916
+        version = 5
 
     strings:
         $s1 = "\"mode=attach&name=\"" ascii
@@ -34,7 +40,6 @@ rule apt_js_sharpext : SharpTongue
         $manifest1 = "\"description\":\"advanced font\"," ascii
         $manifest2 = "\"scripts\":[\"bg.js\"]" ascii
         $manifest3 = "\"devtools_page\":\"dev.html\"" ascii
-
 
     condition:
         (

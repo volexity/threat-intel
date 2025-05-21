@@ -11,7 +11,8 @@ rule apt_malware_py_upstyle : UTA0218
         os_arch = "all"
         report = "TIB-20240412"
         scan_context = "file,memory"
-        last_modified = "2024-04-12T13:05Z"
+        severity = "critical"
+        last_modified = "2024-04-12T13:05:13Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10429
         version = 2
@@ -41,7 +42,8 @@ rule susp_any_gost_arguments
         os_arch = "all"
         report = "TIB-20240412"
         scan_context = "file"
-        last_modified = "2024-04-12T13:06Z"
+        severity = "critical"
+        last_modified = "2024-04-12T13:06:14Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10425
         version = 2
@@ -65,7 +67,8 @@ rule susp_any_jarischf_user_path
         os_arch = "all"
         report = "TIB-20240412"
         scan_context = "file,memory"
-        last_modified = "2024-04-12T13:06Z"
+        severity = "high"
+        last_modified = "2024-04-15T13:48:06Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10424
         version = 4
@@ -88,7 +91,8 @@ rule hacktool_golang_reversessh_fahrj
         reference = "https://github.com/Fahrj/reverse-ssh"
         report = "TIB-20240412"
         scan_context = "file,memory"
-        last_modified = "2024-04-12T13:06Z"
+        severity = "critical"
+        last_modified = "2024-04-12T13:06:01Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10423
         version = 5

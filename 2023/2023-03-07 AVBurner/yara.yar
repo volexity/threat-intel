@@ -1,17 +1,21 @@
-rule apt_win_avburner : SnakeCharmer
+rule apt_malware_win_avburner: DeviousBamboo
 {
     meta:
         author = "threatintel@volexity.com"
         date = "2023-01-02"
         description = "Detects AVBurner based on a combination of API calls used, hard-coded strings and bytecode patterns."
         hash = "4b1b1a1293ccd2c0fd51075de9376ebb55ab64972da785153fcb0a4eb523a5eb"
-        memory_suitable = 1
-        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
+        os = "win"
+        os_arch = "all"
         reference = "https://www.trendmicro.com/en_us/research/22/k/hack-the-real-box-apt41-new-subgroup-earth-longzhi.html"
+        scan_context = "file,memory"
+        severity = "critical"
+        last_modified = "2024-08-16T10:38:52Z"
+        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
+        rule_id = 8780
+        version = 4
 
     strings:
-        // Note that in theory, this could hit on various other tools trying to do similar things to
-        // AVBurner
         $api1 = "PspCreateProcessNotifyRoutineAddress" wide
         $api2 = "PspCreateThreadNotifyRoutineAddress" wide
         $api3 = "PspLoadImageNotifyRoutineAddress" wide

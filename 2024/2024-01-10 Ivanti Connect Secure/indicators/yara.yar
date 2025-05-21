@@ -1,3 +1,5 @@
+import "math"
+
 rule apt_webshell_pl_complyshell: UTA0178
 {
     meta:
@@ -9,7 +11,8 @@ rule apt_webshell_pl_complyshell: UTA0178
         os_arch = "all"
         report = "TIB-20231215"
         scan_context = "file,memory"
-        last_modified = "2024-01-09T10:05Z"
+        severity = "critical"
+        last_modified = "2024-01-12T17:32:31Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 9995
         version = 4
@@ -20,34 +23,33 @@ rule apt_webshell_pl_complyshell: UTA0178
     condition:
         $s
 }
-
 rule apt_webshell_aspx_glasstoken: UTA0178
 {
     meta:
         author = "threatintel@volexity.com"
         date = "2023-12-12"
-        description = "Detection for a custom webshell seen on external facing server. The webshell contains two functions, the first is to act as a Tunnel, using code borrowed from reGeorg, the second is custom code to execute arbitrary .NET code."
+        description = "Detection for a custom webshell seen on Exchange server. The webshell contains two functions, the first is to act as a Tunnel, using code borrowed from reGeorg, the second is custom code to execute arbitrary .NET code."
         hash1 = "26cbb54b1feb75fe008e36285334d747428f80aacdb57badf294e597f3e9430d"
         os = "win"
         os_arch = "all"
         report = "TIB-20231215"
         scan_context = "file,memory"
-        last_modified = "2024-01-09T10:08Z"
+        severity = "critical"
+        last_modified = "2024-09-30T18:48:20Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 9994
-        version = 5
+        version = 6
 
     strings:
         $s1 = "=Convert.FromBase64String(System.Text.Encoding.Default.GetString(" ascii
         $re = /Assembly\.Load\(errors\)\.CreateInstance\("[a-z0-9A-Z]{4,12}"\).GetHashCode\(\);/
 
     condition:
-        for any i in (0..#s1):
+        for any i in (0..math.min(#s1,100)):
             (
                 $re in (@s1[i]..@s1[i]+512)
             )
 }
-
 rule webshell_aspx_regeorg
 {
     meta:
@@ -60,7 +62,8 @@ rule webshell_aspx_regeorg
         reference = "https://github.com/L-codes/Neo-reGeorg/blob/master/templates/tunnel.aspx"
         report = "TIB-20231215"
         scan_context = "file,memory"
-        last_modified = "2024-01-09T10:04Z"
+        severity = "critical"
+        last_modified = "2024-01-09T10:04:58Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 410
         version = 7
@@ -81,7 +84,6 @@ rule webshell_aspx_regeorg
         $proxy1 or
         all of ($proxy_b*)
 }
-
 rule hacktool_py_pysoxy
 {
     meta:
@@ -94,7 +96,8 @@ rule hacktool_py_pysoxy
         reference = "https://github.com/MisterDaneel/pysoxy/blob/master/pysoxy.py"
         report = "TIB-20240109"
         scan_context = "file,memory"
-        last_modified = "2024-01-09T13:45Z"
+        severity = "critical"
+        last_modified = "2024-01-09T13:45:28Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10065
         version = 3

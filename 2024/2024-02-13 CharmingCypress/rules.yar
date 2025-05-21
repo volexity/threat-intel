@@ -1,7 +1,8 @@
 import "pe"
 import "hash"
+import "math"
 
-rule apt_malware_korku_loader: CharmingCypress
+rule apt_malware_ps1_korku_loader: CharmingCypress
 {
     meta:
         author = "threatintel@volexity.com"
@@ -11,11 +12,12 @@ rule apt_malware_korku_loader: CharmingCypress
         os = "win"
         os_arch = "all"
         scan_context = "file"
+        severity = "critical"
         report = "TIB-20240111"
-        last_modified = "2024-01-11T15:28Z"
+        last_modified = "2025-02-18T17:16:00Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10042
-        version = 3
+        version = 5
 
     strings:
         $korku = "$KorkuItems" wide ascii
@@ -41,8 +43,10 @@ rule apt_delivery_lnk_charmingcypress_dec23: CharmingCypress
         hash1 = "f6f0f682668f78dbecfc30a0e0c76b6a3d86298869fb44b39adf19fdcdca5762"
         os = "win"
         os_arch = "all"
+
         scan_context = "file"
-        last_modified = "2024-01-11T15:28Z"
+        severity = "critical"
+        last_modified = "2024-01-11T15:28:54Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10040
         version = 3
@@ -61,7 +65,7 @@ rule apt_delivery_lnk_charmingcypress_dec23: CharmingCypress
             $desktop
         )
 }
-rule apt_malware_vbs_basicstar: CharmingCypress
+rule apt_malware_vbs_basicstar_a: CharmingCypress
 {
     meta:
         author = "threatintel@volexity.com"
@@ -70,12 +74,14 @@ rule apt_malware_vbs_basicstar: CharmingCypress
         hash1 = "c6f91e5585c2cbbb8d06b7f239e30b271f04393df4fb81815f6556fa4c793bb0"
         os = "win"
         os_arch = "all"
-        scan_context = "file,memory"
         report = "TIB-20240111"
-        last_modified = "2024-01-11T15:28Z"
+        report2 = "TIB-20240126"
+        scan_context = "file,memory"
+        severity = "critical"
+        last_modified = "2025-05-21T14:53:37Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10037
-        version = 4
+        version = 8
 
     strings:
         $s1 = "Base64Encode(EncSess)" ascii wide
@@ -102,10 +108,11 @@ rule apt_malware_ps1_powerless_b: CharmingCypress
         reference = "https://research.checkpoint.com/2023/educated-manticore-iran-aligned-threat-actor-targeting-israel-via-improved-arsenal-of-tools/"
         report = "TIB-20231027"
         scan_context = "file,memory"
-        last_modified = "2023-11-03T15:38Z"
+        severity = "critical"
+        last_modified = "2024-01-29T13:02:52Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 9794
-        version = 4
+        version = 5
 
     strings:
         $fun_1 = "function verifyClickStorke"
@@ -135,7 +142,6 @@ rule apt_malware_ps1_powerless_b: CharmingCypress
         $s_7 = "$hashString = [System.BitConverter]::ToString($hash).Replace('-','').ToLower()"
         $s_8 = "$Global:UID = ((gwmi win32_computersystemproduct).uuid -replace '[^0-9a-z]').substring("
         $s_9 = "$rawpacket = \"{`\"MId`\":`\"$Global:MachineID`\",`\"BotId`\":`\"$basebotid`\"}\""
-        $s_10 = "$bitmap = New-Object System.Drawing.Bitmap $bounds.Width, $bounds.Height"
         $s_12 = "Runned Without any Error"
         $s_13 = "$commandresponse = (Invoke-Expression $instruction -ErrorAction Stop) | Out-String"
         $s_14 = "Operation started successfuly"
@@ -162,10 +168,11 @@ rule apt_malware_noknok_base64_encoded_bash : CharmingCypress
         os_arch = "all"
         report = "TIB-20231027"
         scan_context = "file"
-        last_modified = "2023-10-27T16:17Z"
+        severity = "critical"
+        last_modified = "2024-09-30T16:40:53Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 9792
-        version = 3
+        version = 4
 
     strings:
         $start = "bash -c bash -c \"$(base64 -d <<< \"" nocase
@@ -173,7 +180,7 @@ rule apt_malware_noknok_base64_encoded_bash : CharmingCypress
 
     condition:
         filesize < 100KB and
-        for any i in (0..#start):
+        for any i in (0..math.min(#start, 32)):
             (
                 $end in (@start[i]..@start[i]+10240)
             )
@@ -189,7 +196,8 @@ rule apt_malware_macos_noknok_stage_1: CharmingCypress
         os_arch = "all"
         reference = "https://www.proofpoint.com/us/blog/threat-insight/welcome-new-york-exploring-ta453s-foray-lnks-and-mac-malware"
         scan_context = "file"
-        last_modified = "2023-10-27T14:26Z"
+        severity = "critical"
+        last_modified = "2023-10-27T14:26:50Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 9791
         version = 3
@@ -219,7 +227,8 @@ rule apt_malware_win_powerless_persistence_exe: CharmingCypress
         os = "win"
         os_arch = "all"
         scan_context = "file"
-        last_modified = "2023-10-20T08:45Z"
+        severity = "critical"
+        last_modified = "2023-10-20T08:45:51Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 9779
         version = 2
@@ -245,7 +254,8 @@ rule apt_malware_macos_vpnclient_cc_oct23: CharmingCypress
         parent_hash = "31ca565dcbf77fec474b6dea07101f4dd6e70c1f58398eff65e2decab53a6f33"
         report = "TIB-20231027"
         scan_context = "file,memory"
-        last_modified = "2023-10-27T16:17Z"
+        severity = "critical"
+        last_modified = "2023-10-27T16:17:54Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 9770
         version = 3
@@ -271,7 +281,8 @@ rule apt_malware_charmingcypress_openvpn_configuration: CharmingCypress
         os_arch = "all"
         report = "TIB-20231027"
         scan_context = "file"
-        last_modified = "2023-10-27T16:17Z"
+        severity = "high"
+        last_modified = "2023-10-27T16:17:48Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 9769
         version = 3
@@ -295,7 +306,8 @@ rule apt_delivery_win_charming_openvpn_client: CharmingCypress
         os_arch = "all"
         report = "TIB-20231027"
         scan_context = "file"
-        last_modified = "2023-10-27T16:17Z"
+        severity = "critical"
+        last_modified = "2023-10-27T16:17:32Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 9768
         version = 2
@@ -314,11 +326,15 @@ rule apt_malware_ps1_powerstar_generic: CharmingCypress
         author = "threatintel@volexity.com"
         description = "Detects POWERSTAR modules based on common HTTP functions used across modules."
         date = "2023-06-02"
+        os = "win"
+        os_arch = "all"
+        report = "TIB-20240126"
         scan_context = "file,memory"
-        last_modified = "2023-06-28T09:24Z"
+        severity = "critical"
+        last_modified = "2024-01-26T15:44:55Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 9356
-        version = 2
+        version = 3
 
     strings:
         $http1 = "Send_Upload" ascii wide
