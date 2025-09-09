@@ -319,10 +319,10 @@ rule apt_malware_elf_catchdns_aug20_memory: DriftingBamboo
         report2 = "TIB-20231221"
         scan_context = "file,memory"
         severity = "critical"
-        last_modified = "2024-08-02T10:40:24Z"
+        last_modified = "2025-06-19T10:59:39Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 227
-        version = 10
+        version = 11
 
     strings:
         $os1 = "current thread policy=%d" ascii wide
@@ -368,7 +368,7 @@ rule apt_malware_elf_catchdns_aug20_memory: DriftingBamboo
         $netw10 = "otherhead_" ascii wide
         $netw11 = "configfile" ascii wide
 
-        $apache = {48 54 54 50 2F 31 2E 31 20 32 30 30 20 4F 4B 0D 0A 53 65 72 76 65 72 3A 20 41 70 61 63 68 65 0D 0A 43 6F 6E 6E 65 63 74 69 6F 6E 3A 20 63 6C 6F 73 65 0D 0A 43 6F 6E 74 65 6E 74 2D 54 79 70 65 3A 20 25 73 0D 0A 43 6F 6E 74 65 6E 74 2D 4C 65 6E 67 74 68 3A 20 25 64 0D 0A}
+        $apache = "HTTP/1.1 200 OK\r\nServer: Apache\r\nConnection: close\r\nContent-Type: %s\r\nContent-Length: %d\r\n"
 
         $cpp1 = "src/os.cpp"
         $cpp2 = "src/test_catch_dns.cpp"

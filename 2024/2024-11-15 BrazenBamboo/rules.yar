@@ -170,7 +170,7 @@ rule apt_malware_macos_lightspy_plist : BrazenBamboo
         filesize < 1KB
         and all of ($s*)
 }
-rule apt_malware_macos_lightspy_json_version : BrazenBamboo
+rule apt_malware_macos_lightspy_json_version: BrazenBamboo
 {
     meta:
         author = "threatintel@volexity.com"
@@ -181,14 +181,14 @@ rule apt_malware_macos_lightspy_json_version : BrazenBamboo
         os_arch = "all"
         scan_context = "file"
         severity = "critical"
-        last_modified = "2024-07-03T13:28:36Z"
+        last_modified = "2025-06-18T16:15:49Z"
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
         rule_id = 10249
-        version = 2
+        version = 3
 
     strings:
-        $date = {7b 22 64 61 74 65 22 3a 22 32 30} //{"date":"20
-        $filename = {22 2c 22 66 69 6c 65 6e 61 6d 65 22 3a 22} //","filename":"
+        $date = "{\"date\":\"20" //{"date":"20
+        $filename = "\",\"filename\":\""
 
     condition:
         filesize < 1KB
