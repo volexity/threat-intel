@@ -1,0 +1,57 @@
+﻿value,entity_type,description
+80.85.154.48:443,url,GOVERSHELL C2 URL Address
+80.85.157.117:443,url,GOVERSHELL C2 URL Address
+82.118.16.173:443,url,GOVERSHELL C2 URL Address
+wss://api.twmoc.info/ws,url,GOVERSHELL C2 URL Address
+wss://onedrive.azure-app.store/ws,url,GOVERSHELL C2 URL Address
+wss://outlook.windows-app.store/ws ,url,GOVERSHELL C2 URL Address
+www.twmoc.info,url,GOVERSHELL C2 URL Address
+https://app-site-association.cdn-apple.info:443/updates.rss,url,GOVERSHELL C2 URL Address
+104.194.152.137,ipaddress,GOVERSHELL C2 IP Address
+104.194.152.152,ipaddress,GOVERSHELL C2 IP Address
+185.144.28.68,ipaddress,GOVERSHELL C2 IP Address
+31.192.234.22,ipaddress,GOVERSHELL C2 IP Address
+45.141.139.222,ipaddress,GOVERSHELL C2 IP Address
+74.119.193.175,ipaddress,GOVERSHELL C2 IP Address
+80.85.156.234,ipaddress,GOVERSHELL C2 IP Address
+80.85.154.48,ipaddress,GOVERSHELL C2 IP Address
+80.85.157.117,ipaddress,GOVERSHELL C2 IP Address
+82.118.16.173,ipaddress,GOVERSHELL C2 IP Address
+azure-app.store,hostname,GOVERSHELL C2 Domain
+twmoc.info,hostname,GOVERSHELL C2 Domain
+windows-app.store,hostname,GOVERSHELL C2 Domain
+cdn-apple.info,hostname,GOVERSHELL C2 Domain
+2ffe1e4f4df34e1aca3b8a8e93eee34bfc4b7876cedd1a0b6ca5d63d89a26301,file,GOVERSHELL Sample
+4c041c7c0d5216422d5d22164f83762be1e70f39fb8a791d758a816cdf3779a9,file,GOVERSHELL Sample
+53af82811514992241e232e5c04e5258e506f9bc2361b5a5b718b4e4b5690040,file,GOVERSHELL Sample
+88782d26f05d82acd084861d6a4b9397d5738e951c722ec5afed8d0f6b07f95e,file,GOVERSHELL Sample
+998e314a8babf6db11145687be18dc3b8652a3dd4b36c115778b7ca5f240aae4,file,GOVERSHELL Sample
+a5ee55a78d420dbba6dec0b87ffd7ad6252628fd4130ed4b1531ede960706d2d,file,GOVERSHELL Sample
+ad5718f6810714bc6527cc86d71d34d8c556fe48706d18b5d14f0261eb27d942,file,GOVERSHELL Sample
+fbade9d8a040ed643b68e25e19cba9562d2bd3c51d38693fe4be72e01da39861,file,GOVERSHELL Sample
+7d7d75e4d524e32fc471ef2d36fd6f7972c05674a9f2bac909a07dfd3e19dd18,file,GOVERSHELL Sample
+0414217624404930137ec8f6a26aebd8a3605fe089dbfb9f5aaaa37a9e2bad2e,file,GOVERSHELL Sample
+126c3d21a1dae94df2b7a7d0b2f0213eeeec3557c21717e02ffaed690c4b1dbd,file,GOVERSHELL Sample
+https://1drv.ms/u/c/F703BC98FAB44D61/ER_XG5FDkURHtsmna8vOQrIBRODKiQBKYJVKnI-kGKwX0A,url,GOVERSHELL Phishing URL
+https://1drv.ms/u/c/F703BC98FAB44D61/ESz4UV9JeOhOp8kiWd0Ie10ByH7eUdSRlBy2NCiNeo2LYw,url,GOVERSHELL Phishing URL
+https://1drv.ms/u/c/f9e3b332ce488781/Eap6_fxYFP5Eh1ZKDZaf8lMBjJNcfdba4MVcr4YfKj674w?e=fgNIj4,url,GOVERSHELL Phishing URL
+https://1drv.ms/u/c/F703BC98FAB44D61/ERpeLpJlb7FAkbfyuffpFJYBZ-8u2MmQH6LW5xH86B4M8w,url,GOVERSHELL Phishing URL
+https://aesthetic-donut-1af43s2.netlify.app/file/rar,url,GOVERSHELL Phishing URL
+https://aesthetic-donut-1af43s2.netlify.app/file/zip,url,GOVERSHELL Phishing URL
+https://animated-dango-0fa8c8.netlify.app/file/Taiwan%20Intro.zip,url,GOVERSHELL Phishing URL
+https://aquamarine-choux-46cb43.netlify.app/file/rar,url,GOVERSHELL Phishing URL
+https://aquamarine-choux-46cb43.netlify.app/file/zip,url,GOVERSHELL Phishing URL
+https://aquamarine-choux-46cb43.netlify.app/index/file/[PDF]202507_Please_check_the_document.zip,url,GOVERSHELL Phishing URL
+https://dainty-licorice-db2b1e.netlify.app/file/zip,url,GOVERSHELL Phishing URL
+https://dulcet-mooncake-36558c.netlify.app/file/zip,url,GOVERSHELL Phishing URL
+https://harmonious-malabi-a8ebfa.netlify.app/file/Taiwan%20Intro.rar,url,GOVERSHELL Phishing URL
+https://hllowrodcanlhelipme.netlify.app/file/zip,url,GOVERSHELL Phishing URL
+https://jazzy-biscotti-68241f.netlify.app/files/Intro-Doc.rar,url,GOVERSHELL Phishing URL
+https://ln5.sync.com/4.0/dl/100016f90#3d5wrb4z-hfb4iz3m-qmjzsqnq-39rn3vjv,url,GOVERSHELL Phishing URL
+https://loveusa.netlify.app/file/rar,url,GOVERSHELL Phishing URL
+https://pulicwordfiledownlos.netlify.app/file/rar,url,GOVERSHELL Phishing URL
+https://spontaneous-selkie-d3346f.netlify.app/file/zip,url,GOVERSHELL Phishing URL
+https://statuesque-unicorn-09420f.netlify.app/r,url,GOVERSHELL Phishing URL
+https://subtle-klepon-d73b9b.netlify.app/file/rar,url,GOVERSHELL Phishing URL
+https://subtle-klepon-d73b9b.netlify.app/file/zip,url,GOVERSHELL Phishing URL
+https://vocal-crostata-86ebbf.netlify.app/files/zip,url,GOVERSHELL Phishing URL
