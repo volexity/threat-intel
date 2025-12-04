@@ -1,12 +1,12 @@
-value	entity_type	description
-invitationbipd@outlook.com	emailsender	"Attacker email inviting people to ""Brussels Indo-Pacific Dialogue"" and sends a link under ustrs.com."
-brussels-indo-pacific-forum.org	hostname	Fake webpage impersonating the Brussles Indo Pacific Forum.
-brussels-indo-pacific-dialogue.ustrs.com	hostname	Old domain that appears to have been picked up by suspected Russian threat actor in October 2025. Spear phish email related to Brussels Indo-Pacific Dialogue using this domain has been observed.
-ustrs.com	hostname	Old domain that appears to have been picked up by suspected Russian threat actor in October 2025. Spear phish email related to Brussels Indo-Pacific Dialogue using this domain has been observed.
-invitationcsds@outlook.com	emailsender	Sender conducting Brussels Indo-Pacific Dialogue themed phishing messages
-151.245.195.9	ipaddress	Resolution for UTA0355 domain 
-bsc2025.org	hostname	Domain impersonating the Belgrade Security Conference
-wne-2025.com	hostname	Domain likely targeting the World Nuclear Exhibition
-88.218.1.9	ipaddress	Resolution for UTA0355 domain 
-confirmyourflight-parisaeroport.com	hostname	Domain likely targeting the World Nuclear Exhibition
-world-nuclear-exhibition-paris.com	hostname	Domain likely targeting the World Nuclear Exhibition
+value,entity_type,description
+invitationbipd@outlook.com,emailsender,"Attacker email inviting people to ""Brussels Indo-Pacific Dialogue"" and sends a link under ustrs.com."
+brussels-indo-pacific-forum.org,hostname,Fake webpage impersonating the Brussles Indo Pacific Forum.
+brussels-indo-pacific-dialogue.ustrs.com,hostname,Old domain that appears to have been picked up by suspected Russian threat actor in October 2025. Spear phish email related to Brussels Indo-Pacific Dialogue using this domain has been observed.
+ustrs.com,hostname,Old domain that appears to have been picked up by suspected Russian threat actor in October 2025. Spear phish email related to Brussels Indo-Pacific Dialogue using this domain has been observed.
+invitationcsds@outlook.com,emailsender,Sender conducting Brussels Indo-Pacific Dialogue themed phishing messages
+151.245.195.9,ipaddress,Resolution for UTA0355 domain 
+bsc2025.org,hostname,Domain impersonating the Belgrade Security Conference
+wne-2025.com,hostname,Domain likely targeting the World Nuclear Exhibition
+88.218.1.9,ipaddress,Resolution for UTA0355 domain 
+confirmyourflight-parisaeroport.com,hostname,Domain likely targeting the World Nuclear Exhibition
+world-nuclear-exhibition-paris.com,hostname,Domain likely targeting the World Nuclear Exhibition
