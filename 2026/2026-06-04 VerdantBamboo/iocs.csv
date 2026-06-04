@@ -1,0 +1,47 @@
+value,entity_type,description
+dfb37247d12351ef9708cb6631ce2d7017897503657c6b882a711c0da8a9a591,file,PLENET sample
+2388ed7aee0b6b392778e8f9e98871c06499f476c9e7eae6ca0916f827fe65df,file,BRICKSTORM sample
+calixcloudinfo.com,hostname,Suspected BRICKSTORM C2 server.
+devs.calixcloudinfo.com,hostname,Suspected BRICKSTORM C2 server
+45313a6745803a7f57ff35f5397fdf117eaec008a76417e6e2ac8a6280f7d830,file,BRICKSTORM Rust Variant
+f06457d2be0840faac9f0a91e63e33f932bf82922b25ac8c046fab38bb1e0b36,file,SLAYSTYLE webshell
+92fb4ad6dee9362d0596fda7bbcfe1ba353f812ea801d1870e37bfc6376e624a,file,SLAYSTYLE webshell
+320a0b5d4900697e125cebb5ff03dee7368f8f087db1c1570b0b62f5a986d759,file,BRICKSTORM sample
+24a11a26a2586f4fba7bfe89df2e21a0809ad85069e442da98c37c4add369a0c,file,PLENET sample
+107.175.235.196,ipaddress,Suspected PLENET C2s based on server response data
+170.187.181.243,ipaddress,Suspected PLENET C2s based on server response data
+104.253.1.46,ipaddress,Suspected PLENET C2 based on server response data
+149.248.11.71,ipaddress,PLENET C2 from 24a11a26a2586f4fba7bfe89df2e21a0809ad85069e442da98c37c4add369a0c
+e981fc4eaaa6417e6034e21438e55c0360773674a6fc0b63c1b95026449e5254,file,VerdantBamboo related indicator
+40d264cf9c73923932c3dfd52d20f46ff602be3fea8dc6ecc71aca46e6067bf5,file,BRICKSTORM sample
+f70abe93112637d3ec2f6c5e058ccac0307ebf63e496f38588cbfc17a8f8a264,file,VerdantBamboo related indicator
+90b760ed1d0dcb3ef0f2b6d6195c9d852bcb65eca293578982a8c4b64f51b035,file,BRICKSTORM sample
+172-235-56-113.plesk.page,hostname,BRICKSTORM C2
+service.systemsvcs.com,hostname,BRICKSTORM related indicator
+systemsvcs.com,hostname,BRICKSTORM related indicator
+45.63.94.7,ipaddress,Suspected BRICKSTORM C2
+173.254.201.16,ipaddress,Suspected BRICKSTORM C2
+ee41e06ed96182ce80cd4544a6abd5d7719c4a5c0e5ddb266a83842d39b99b0a,file,AGENTPSD sample
+159.223.77.60,ipaddress,BRICKSTORM sample
+66.59.196.250,ipaddress,Suspected BRICKSTORM C2
+172.235.37.124,ipaddress,VerdantBamboo related indicator.
+5.223.49.77,ipaddress,VerdantBamboo related indicator.
+aa688682d44f0c6b0ed7f30b981a609100107f2d414a3a6e5808671b112d1878,file,BRICKSTORM sample
+barannclinic.com,hostname,VerdantBamboo related indicator.
+5.223.58.4,ipaddress,VerdantBamboo related indicator.
+192.3.30.159,ipaddress,Suspected BRICKSTORM C2
+144.202.50.151,ipaddress,Suspected BRICKSTORM C2
+5.223.42.12,ipaddress,VerdantBamboo related indicator.
+5.223.68.181,ipaddress,VerdantBamboo related indicator.
+172.245.5.22,ipaddress,Suspected BRICKSTORM C2
+kitfloor.org,hostname,BRICKSTORM C2
+bititer.org,hostname,BRICKSTORM C2
+faoith.com,hostname,BRICKSTORM C2
+msazure.azdatastore.workers.dev,hostname,VerdantBamboo related indicator
+fiveworkscorp.com,hostname,BRICKSTORM c2
+natsupport.net,hostname,BRICKSTORM c2
+performanceviewtools.com,hostname,BRICKSTORM c2
+b42159d68ba58d7857c091b5acc59e30e50a854b15f7ce04b61ff6c11cdf0156,file,VerdantBamboo related indicator
+www.natsupport.net,hostname,BRICKSTORM c2
+winfoacacorp.com,hostname,BRICKSTORM C2
+42692bd13333623e9085d0c1326574a3391efcbf18158bb04972103c9ee4a3b8,file,VerdantBamboo related indicator
