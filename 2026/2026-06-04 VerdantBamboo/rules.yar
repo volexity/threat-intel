@@ -53,49 +53,57 @@ rule apt_malware_elf_VerdantBamboo_paths: VerdantBamboo
         $s1
 }
 
+// Copyright 2026 Volexity, Inc
+// You may not use this file except in compliance with the Volexity End User License Agreement and for the Customer's own internal business operations.
+// If you did not receive a license, contact support@volexity.com.
+// Exported: 2026-06-09T16:13:00Z
+
+
+
 rule apt_malware_golang_brickstorm_b: VerdantBamboo BRICKSTORM
 {
-    meta:
-        author = "threatintel@volexity.com"
-        date = "2025-09-05"
-        description = "Detection for the BRICKSTORM malware family."
-        hash1 = "aa688682d44f0c6b0ed7f30b981a609100107f2d414a3a6e5808671b112d1878"
-        os = "all"
-        os_arch = "all"
-        scan_context = "file,memory"
-        severity = "critical"
-        report1 = "TIB-20251104"
-        last_modified = "2025-10-30T17:13:51Z"
-        license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
-        rule_id = 12299
-        version = 5
+  meta:
+    author = "threatintel@volexity.com"
+    date = "2025-09-05"
+    description = "Detection for the BRICKSTORM malware family."
+    hash1 = "aa688682d44f0c6b0ed7f30b981a609100107f2d414a3a6e5808671b112d1878"
+    os = "all"
+    os_arch = "all"
+    scan_context = "file,memory"
+    severity = "critical"
+    report1 = "TIB-20251104"
+    last_modified = "2026-06-09T16:12:33Z"
+    license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
+    rule_id = 12299
+    version = 6
 
-    strings:
-        $method1 = "UnPackHeaderData"
-        $method2 = "handleRelay"
-        $method3 = "NewWebSocketClient"
-        $method4 = "createDnsMessage"
-        $method5 = "GetFileOwnerInfo"
+  strings:
+    $method1 = "UnPackHeaderData"
+    $method2 = "handleRelay"
+    $method3 = "NewWebSocketClient"
+    $method4 = "createDnsMessage"
+    $method5 = "GetFileOwnerInfo"
 
-        $err1 = "dns rcode: %v"
-        $err2 = "readFull error"
-        $err3 = "tagAuth error"
-        $err4 = "error: Auth: %s"
+    $err1 = "dns rcode: %v"
+    $err2 = "readFull error"
+    $err3 = "tagAuth error"
+    $err4 = "error: Auth: %s"
 
-        $ws1 = "<a style='text-decoration: none;'  href='javascript:history.go(-1);'><h5>Back</h5></a>"
-        $ws2 = "Mon, 02 Jan 2006 15:04:05 GMT"
+    $ws1 = "<a style='text-decoration: none;'  href='javascript:history.go(-1);'><h5>Back</h5></a>"
+    $ws2 = "Mon, 02 Jan 2006 15:04:05 GMT"
 
-        $doh = "https://1.0.0.1/dns-queryhttps://1.1.1.1/dns-queryhttps://8.8.4.4/dns-queryhttps://8.8.8.8/dns-query"
+    $doh = "https://1.0.0.1/dns-queryhttps://1.1.1.1/dns-queryhttps://8.8.4.4/dns-queryhttps://8.8.8.8/dns-query"
 
-    condition:
-        4 of ($method*) or
-        3 of ($err*) or
-        all of ($ws*) or
-        (
-            $doh and
-            any of ($method*, $err*, $ws*, $doh)
-        )
+  condition:
+    4 of ($method*) or
+    3 of ($err*) or
+    all of ($ws*) or
+    (
+      $doh and
+      3 of ($method*, $err*, $ws*, $doh)
+    )
 }
+
 rule apt_malware_golang_brickstorm: VerdantBamboo BRICKSTORM
 {
     meta:
