@@ -53,13 +53,6 @@ rule apt_malware_elf_VerdantBamboo_paths: VerdantBamboo
         $s1
 }
 
-// Copyright 2026 Volexity, Inc
-// You may not use this file except in compliance with the Volexity End User License Agreement and for the Customer's own internal business operations.
-// If you did not receive a license, contact support@volexity.com.
-// Exported: 2026-06-09T16:13:00Z
-
-
-
 rule apt_malware_golang_brickstorm_b: VerdantBamboo BRICKSTORM
 {
   meta:
