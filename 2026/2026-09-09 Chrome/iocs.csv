@@ -1,0 +1,39 @@
+value,entity_type,description
+69ee454d644b20abf4caa76b7a66d244075b7c8df47aeb5d6b0242015f671abc,file,UTA0560 malware payloads.
+d17053557bb90298f7b115432b4820a248fdbe678bca31721529b1f51a82343b,file,Files1.html; HTML malware payload associated with UTA0560.
+337b48c1cd6dd6e7b8073327082a60e149517fa084ba17b180e041fffa3b130d,file,react.min.js; JavaScript malware payload associated with UTA0560.
+ircribbin77@hotmail.com,emailsender,UTA0560 known phishing sender.
+69c1603f3f9015beb0097d0a3bb0f17400c314e2eae65a7eceacd3b93ea570dc,file,msgbox.exe (GRIMWEDGE); Win32 EXE malware payload associated with UTA0560.
+04cdff07db9128992199142ad42995c98d40bbf5edfffeb6917cbc7e6fc343b8,file,UTA0560 malware payloads.
+3b71d721c39fad92a44ddd764bbb34afeae44a5db886d0a4827a399a5fbd367f,file,wsc.dll; Win32 DLL malware payload associated with UTA0560.
+cloud.shinewrist.net,hostname,UTA0560 C2 and exploit hosting infrastructure.
+5995f42a828606705a7339d58a665c229936e81c4e539cdfa115eb46a2eb53d6,file,p2 data; binary malware payload. Actor: Shared in the pasted table; associated with UTA0560 in iocs-1.csv.
+5984343880792fd0dbb3968fe6db894d699831a4c009e8ff14a140cec9b61114,file,UTA0560 related indicators.
+ocr.opusaccel.top,hostname,UTA0560 GRIMWEDGE backdoor C2 infrastructure.
+59dc108e22cb856c228bbf8a1ab955fb66f0844a07fe10fa0d9fc3823d2cbbcb,file,GRIMWEDGE backdoor; JavaScript malware associated with UTA0560.
+c75eab680b6f7a60c40a377145e2af5593c4dc9d27c7d78c66c285bfcbf50b9f,file,UTA0560 malware payloads.
+206.166.251.164,ipaddress,Hosts cloud.shinewrist.net; attributed to UTA0560 in the pasted table and described as a suspected UTA0560 indicator in iocs-1.csv.
+51462a23ac25e1bd0e49b7cae7f3a71f8d2201e22d45175b587e4740b49863cc,file,p2 DLL; Win64 DLL malware payload. Actor: Shared in the pasted table; associated with UTA0560 in iocs-1.csv.
+1f551bdbdd252fe6d9fff59bf6f3f88515974396cbcc37d8118f24052c5f9201,file,UTA0560 malware payloads.
+www.opusaccel.top,hostname,UTA0560 related indicators.
+8e666ccc3d45d4dcf152ffa5a5b0ba0e8d71c169070e329376236ae88888f21f,file,UTA0560 malware payloads.
+bf4572a93cbf5171b318bcfd81e98a71183a96764e2ec634972114d1d8b928be,file,UTA0560 related indicators.
+shinewrist.net,hostname,UTA0560 exploit infrastructure
+cd0c21f9b32b7feeda1787fccab622dec60ecdf84c0538c08bde3946856b0fa0,file,p1 data; binary malware payload. Actor: Shared in the pasted table; associated with UTA0560 in iocs-1.csv.
+b7b0cd6539464ab39c6526e499f86d611faa21c5af945535ebaf187cec543af1,file,p1 DLL; Win64 DLL malware payload. Actor: Shared in the pasted table; associated with UTA0560 in iocs-1.csv.
+7a52ff23949edee8faa61ce0def6dbca8b7e5943c54d23376cc190762ea3985c,file,page.html; HTML malware payload. Actor: Shared in the pasted table; associated with UTA0560 in iocs-1.csv.
+d125b1126eeeacea9991279e84cb9a5ce5b627cdcb7b6d550c9f59251cb4005d,file,UTA0560 malware payloads.
+opusaccel.top,hostname,UTA0560 C2 infrastructure.
+56eda0ac82e06ee609b034306025e67df161c5877399c305c8eaea136e80c951,file,Temp.txt; MSI associated with GRIMWEDGE malware and UTA0560.
+m365update.com,hostname,JungleBamboo domain discovered via domain registration patterns.
+kandyba787@gmail.com,emailsender,JungleBamboo associated email
+5eb5645511b00e4f4d73125654eeb3a3930fcf09c65685dc7f03f725331492e3,file,a001 (LONGTALE); malicious Chrome extension associated with JungleBamboo.
+msbenefit.com,hostname,JungleBamboo phishing infrastructure used in delivery of CVE-2026-85046.
+chris.b.fitzgerald@proton.me,emailsender,JungleBamboo sending address
+photos.msbenefit.com,hostname,Suspected JungleBamboo (CN APT) IOC
+e2a59432ce2b0d83ded936374a11fca3d3defaf4aab90eb37fca58683eae32c0,file,msgbox.exe (SUPERSTOMP); Win64 EXE Chrome extension installer associated with JungleBamboo.
+extension-management-portal.karlmalexander.workers.dev,hostname,C2 Hostname observed from malicious Chrome extension LONGTALE.
+gitprogram.com,hostname,JungleBamboo phishing and C2 infrastructure used in delivery of CVE-2026-85046.
+proof.gitprogram.com,hostname,JungleBamboo domain used in delivery of CVE-2026-85046.
+karlmalexander.workers.dev,hostname,C2 Hostname observed from malicious Chrome extension LONGTALE.
+https://xyz0102.gitprogram.com/a001,url,JungleBamboo LONGTALE Chrome extension download URL.
